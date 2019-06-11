@@ -6,6 +6,10 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import os
 
+from scrapy import Request
+from scrapy.pipelines.images import ImagesPipeline
+
+import hashlib
 from xiaohua.items import ThumbItem
 import pymysql
 from xiaohua import settings
@@ -46,3 +50,14 @@ class XiaohuaPipeline(object):
             c.execute(sql, args=dict(item))
 
         return item
+
+
+class XHImagePipeline(ImagesPipeline):
+    def get_media_requests(self, item, info):
+        return [Request(x, meta={'name': item['name']})
+                for x in item.get(self.images_urls_field, [])]
+
+    def file_path(self, request, response=None, info=None):
+        image_guid = hashlib.sha1(request.url.encode()).hexdigest()
+        name = request.meta.get('name')
+        return '%s/%s.jpg' %(name, image_guid)

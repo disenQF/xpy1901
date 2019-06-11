@@ -31,7 +31,8 @@ class XhDxSpider(scrapy.Spider):
             # 发起详情页面的请求，优先级高一些(数值低)
             yield Request(item['info_url'],
                           callback=self.parse_info,
-                          meta={'uid': item['id']},
+                          meta={'uid': item['id'],
+                                'name': item['name']},
                           priority=10)
 
 
@@ -47,6 +48,7 @@ class XhDxSpider(scrapy.Spider):
 
         # 读取请求对象中传入meta中的uid数据
         item['uid'] = response.meta.get('uid')
+        item['name'] = response.meta.get('name')
         item['image_urls'] = ['http://www.521609.com'+response.css('#bigimg').xpath('./@src').get()]
         item['images'] = []
         yield item
@@ -56,5 +58,6 @@ class XhDxSpider(scrapy.Spider):
         if next_url != '#':
             next_url = 'http://www.521609.com/daxuexiaohua/'+next_url
             yield Request(next_url, callback=self.parse_info,
-                          meta={'uid': item['uid']},
+                          meta={'uid': item['uid'],
+                                'name': item['name']},
                           priority=10)

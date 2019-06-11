@@ -28,7 +28,7 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 3
+# DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -67,7 +67,8 @@ DOWNLOAD_DELAY = 3
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'xiaohua.pipelines.XiaohuaPipeline': 300,
-   'scrapy.pipelines.images.ImagesPipeline': 1,
+   'xiaohua.pipelines.XHImagePipeline': 5,
+   # 'scrapy.pipelines.images.ImagesPipeline': 1,
 }
 
 # 配置图片存放的根目录
@@ -108,6 +109,3 @@ DB_CONFIG = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-
-if __name__ == '__main__':
-    print(IMAGES_STORAGE)
