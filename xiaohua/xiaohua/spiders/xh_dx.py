@@ -47,8 +47,8 @@ class XhDxSpider(scrapy.Spider):
 
         # 读取请求对象中传入meta中的uid数据
         item['uid'] = response.meta.get('uid')
-        item['img_url'] = response.css('#bigimg').xpath('./@src').get()
-
+        item['image_urls'] = ['http://www.521609.com'+response.css('#bigimg').xpath('./@src').get()]
+        item['images'] = []
         yield item
 
         # 下一页url

@@ -24,5 +24,8 @@ class ThumbItem(scrapy.Item):
 
 class XHItem(scrapy.Item):
     uid = scrapy.Field()
-    img_url = scrapy.Field()
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
+    name = scrapy.Field()
+
 

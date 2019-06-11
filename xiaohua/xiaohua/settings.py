@@ -8,6 +8,7 @@
 #     https://doc.scrapy.org/en/latest/topics/settings.html
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+import os
 
 BOT_NAME = 'xiaohua'
 
@@ -66,7 +67,17 @@ DOWNLOAD_DELAY = 3
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'xiaohua.pipelines.XiaohuaPipeline': 300,
+   'scrapy.pipelines.images.ImagesPipeline': 1,
 }
+
+# 配置图片存放的根目录
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+IMAGES_STORE = os.path.join(BASE_DIR, 'images')
+
+# 修改item中应用于图片下载管道的字段名
+# 默认为image_urls 和 images
+# IMAGES_URLS_FIELD = 'image_urls'
+# IMAGES_RESULT_FIELD = 'images'
 
 DB_CONFIG = {
    'host': 'localhost',
@@ -97,3 +108,6 @@ DB_CONFIG = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+if __name__ == '__main__':
+    print(IMAGES_STORAGE)
