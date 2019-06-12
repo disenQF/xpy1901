@@ -11,7 +11,8 @@ class BookSpider(CrawlSpider):
 
     rules = (
         # 详情页面的连接提取规则
-        Rule(LinkExtractor(allow=r'/book/\d+/'), callback='parse_item', follow=False),
+        Rule(LinkExtractor(allow=r'/book/\d+/'),
+             callback='parse_item', follow=False),
 
         # 分页连接的提取规则
         Rule(LinkExtractor(restrict_css='.pages'), follow=True),
@@ -28,4 +29,6 @@ class BookSpider(CrawlSpider):
         item['publish_date'] = response.css('.book-details>table').xpath('.//tr[1]/td[4]/text()').get()
         item['pages'] = response.css('.book-details>table').xpath('.//tr[2]/td[4]/text()').get()
 
+        # 任务1： 提取一级、二级和三级的分类名称，以逗号分隔存入catetype字段
+        # 任务2： 将提取到的数据写入到数据库中
         return item
