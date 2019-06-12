@@ -21,7 +21,21 @@ class PythonJobSpider(scrapy.Spider):
         #     file.write(response.body)
         #     print('下载成功')
         # 解析数据
-        print('--->ok-->', response.url)
+        content_nodes = response.css('.contentpile__content__wrapper__item')
+
+        item = {}
+        for content_node in content_nodes:
+            item['info_url'] = content_node.css('a').xpath('./@href').get()
+            item['title'] = content_node.css('.jobName>span').xpath('./@title').get()
+            item['company'] = content_node.css('.company_title').xpath('./text()').get()
+            item['company_url'] = content_node.css('.company_title').xpath('./@href').get()
+            item['salary_range'] = content_node.css('.jobDesc>p').xpath('./text()').get()
+            item['city'], item['year_limit'], item['demand'] = content_node.css('.jobDesc>ul>li')\
+                .xpath('./text()').extract()
+            item['welfare'] = ','.join(content_node.css('.job_welfare>div').xpath('./text()').extract())
+
+            yield item
+
         time.sleep(1)
 
         # 发起下一页请求
