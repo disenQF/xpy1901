@@ -40,7 +40,6 @@ from logging.handlers import TimedRotatingFileHandler, HTTPHandler, SMTPHandler
 logger = logging.getLogger(name='django.request')
 logger.setLevel(logging.WARN)
 
-
 # 创建日志处理器(StreamHandler, FileHandler)
 handler1 = logging.StreamHandler()
 handler1.setLevel(logging.INFO)
@@ -48,14 +47,27 @@ handler1.setLevel(logging.INFO)
 handler2 = logging.FileHandler('django.log')
 handler2.setLevel(logging.ERROR)
 
+handler3 = SMTPHandler('smtp.qq.com',
+                       fromaddr='610039018@qq.com',
+                       toaddrs='diyuhuan@1000phone.com',
+                       subject='日志邮箱通知')
+
+# 配置邮件验证用户和口令（或授权码）
+handler3.username = '610039018@qq.com'
+handler3.password = 'xrjtaatcuylqbbba'  # QQ邮箱发件时验证的“授权码”
+
+handler3.setLevel(logging.FATAL)
+
 # 创建格式化对象 , 并添加到处理器
 formatter = logging.Formatter('[ <%(asctime)s> %(name)s %(levelname)s ] %(message)s')
 handler1.setFormatter(formatter)
 handler2.setFormatter(formatter)
+handler3.setFormatter(formatter)
 
 # 将处理器添加到日志记录器
 logger.addHandler(handler1)
 logger.addHandler(handler2)
+logger.addHandler(handler3)
 
 # 任务4： 使用SMTPHandler将记录的日志信息发送到邮箱中
 
