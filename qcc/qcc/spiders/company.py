@@ -36,7 +36,11 @@ class CompanySpider(scrapy.Spider):
         item['address'] = response.css('.dcontent').xpath('./div[2]/span[3]/a/text()').get()
         item['url'] = response.css('.dcontent').xpath('./div[1]/span[3]/a/@href').get()
         item['boss_name'] = response.css('#sanbanBase').xpath('.//tr[6]/td[2]/text()').get()
-        item['create_time'] = response.css('#sanbanBase').xpath('.//tr[11]/td[4]/text()').get()
+        if item['boss_name'] is None:
+            item['boss_name'] = response.css('.bname h2').xpath('./text()').get()
 
+        item['create_time'] = response.css('#sanbanBase').xpath('.//tr[11]/td[4]/text()').get()
+        if item['create_time'] is None:
+            item['create_time'] = response.css('#Cominfo').xpath('./table[2]//tr[2]/td[4]/text()').get()
         yield item
 
