@@ -1,30 +1,19 @@
 # -*- coding: utf-8 -*-
-import re
-
 import scrapy
-from scrapy import Request
+from scrapy.linkextractors import LinkExtractor
+from scrapy.spiders import CrawlSpider, Rule
 
 
-class CompanySpider(scrapy.Spider):
-    name = 'company'
+class C2Spider(CrawlSpider):
+    name = 'c2'
     allowed_domains = ['www.qichacha.com']
     start_urls = ['https://www.qichacha.com/g_AH.html']
 
-    def parse(self, response):
-        # 提取公司的名称和详情页面的url
-        a_nodes = response.css('.ma_h1')
-        for a_node in a_nodes:
-            company = ''.join(re.findall(r'([\u4e00-\u9fa5]+)',
-                                         a_node.extract()))
-            company_url = "https://www.qichacha.com"+a_node.xpath('./@href').get()
-            yield Request(company_url,
-                          callback=self.parse_info,
-                          meta={'company': company},
-                          priority=10)
-
-        # 任务1： 下一页
-
-        # 任务2： 其它的省份的企业
+    rules = (
+        Rule(LinkExtractor(restrict_css='.ma_h1'), callback='parse_info', follow=False),
+        Rule(LinkExtractor(restrict_css='.pagination'), follow=True),
+        Rule(LinkExtractor(restrict_css='.pills-after'), follow=True)
+    )
 
     def parse_info(self, response):
         # 获取联系电话、邮箱,简介,地址,官网, 法定代表人, 成立日期
@@ -42,4 +31,3 @@ class CompanySpider(scrapy.Spider):
         if item['create_time'] is None:
             item['create_time'] = response.css('#Cominfo').xpath('./table[2]//tr[2]/td[4]/text()').get()
         yield item
-
