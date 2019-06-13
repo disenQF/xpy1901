@@ -8,6 +8,7 @@ from dao.log import LogDao
 
 # 任务1：整理Python中的序列化和反序列的两个模块(json, pickle)
 
+
 @blue.route('/log/', methods=('POST', ))
 def upload_log():
     """
@@ -53,3 +54,14 @@ def upload_log():
     dao.save(**data)
 
     return jsonify({'code': 200, 'msg': '上传日志成功!'})
+
+
+@blue.route('/query_log/', methods=('GET', ))
+def query_log():
+    page = int(request.args.get('page', 1))
+    size = int(request.args.get('size', 20))
+
+    dao = LogDao()
+    datas = dao.query()  # 结果： [ {'ip':'', 'message': '', }]
+
+    return jsonify(datas)
