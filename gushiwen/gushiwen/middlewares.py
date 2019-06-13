@@ -72,6 +72,31 @@ class GushiwenDownloaderMiddleware(object):
         # Called for each request that goes through the downloader
         # middleware.
 
+        # 设置请求的代理IP
+        # 为了防止IP限制
+        request.meta['proxy'] = 'HTTPS://175.148.79.177:1133'
+
+        # 任务4： 爬虫代理IP网站下的所有免费ip/端口/类型(HTTP/HTTPS)和验证时间
+        #         爬虫的数据存入到redis中， 并且通过flask实现可用代理IP的接口
+        """
+        urllib库中设置代理
+        
+        from urllib.request import HTTPHandler,ProxyHandler, build_opener
+        handler = ProxyHandler(proxies={'http:': 'http://xxx:9000'})
+        
+        opener = build_opener(HTTPHandler(), handler)
+        opener.open('http://www.baidu.com')
+        """
+
+        """
+        requests库代理 
+        
+        import requests
+        requests.get('http://www.baidu.com',
+                     proxies={"http": "http://xxx:9000"})
+        """
+
+
         # Must either:
         # - return None: continue processing this request
         # - or return a Response object
