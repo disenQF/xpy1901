@@ -4,6 +4,7 @@ from flask import jsonify
 
 blue = Blueprint('upload_log', __name__)
 
+from dao.log import LogDao
 
 # 任务1：整理Python中的序列化和反序列的两个模块(json, pickle)
 
@@ -39,4 +40,16 @@ def upload_log():
 
     # 任务2： 提取上传日志的时间、等级、消息、文件路径、行号和上传日志客户端的IP
     #         并将这些数据写入到数据库中
+    data = {
+        'ip': request.remote_addr,
+        'upload_time': request.form.get('asctime'),
+        'level': request.form.get('levelname'),
+        'message': request.form.get('msg'),
+        'filepath': request.form.get('pathname'),
+        'lineno': request.form.get('lineno')
+    }
+
+    dao = LogDao()
+    dao.save(**data)
+
     return jsonify({'code': 200, 'msg': '上传日志成功!'})

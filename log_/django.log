@@ -18,3 +18,7 @@
 [ <2019-06-13 09:49:36,070> django.request CRITICAL ] 出现了192的数据库无法连接
 [ <2019-06-13 09:50:11,563> django.request ERROR ] hi, 120
 [ <2019-06-13 09:50:11,566> django.request CRITICAL ] 出现了192的数据库无法连接
+[ <2019-06-13 11:32:17,521> django.request ERROR ] hi, 120
+[ <2019-06-13 11:32:17,535> django.request CRITICAL ] 出现了192的数据库无法连接
+[ <2019-06-13 11:33:00,555> django.request ERROR ] hi, 120
+[ <2019-06-13 11:33:00,562> django.request CRITICAL ] 出现了192的数据库无法连接
