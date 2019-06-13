@@ -6,10 +6,6 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 
-class DushuPipeline(object):
+class GushiwenPipeline(object):
     def process_item(self, item, spider):
-        # 将item的信息由日志的INFO记录
-        # spider.logger -> logging.LoggerAdapter
-        spider.logger.info(item)
-
         return item

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from scrapy.http import HtmlResponse
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 
@@ -21,7 +22,10 @@ class BookSpider(CrawlSpider):
         Rule(LinkExtractor(r'/book/\d+\.html'), follow=True),
     )
 
-    def parse_item(self, response):
+    def parse_item(self, response: HtmlResponse):
+        response.encoding
+        response.headers
+
         item = {}
         item['name'] = response.css('.book-title>h1').xpath('./text()').get()
         item['img'] = response.css('.book-pic').xpath('.//img/@src').get()

@@ -12,4 +12,5 @@ class LogDao(BaseDao):
        super().save(self.table_name, **data)
 
     def query(self, page=1, size=20):
-        return super().query(self.table_name)
+        return super().query(self.table_name,
+                             'ip', 'upload_time', 'message')

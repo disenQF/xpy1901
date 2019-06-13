@@ -1,0 +1,697 @@
+2019-06-13 14:46:05 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: dushu)
+2019-06-13 14:46:05 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.6.1 (v3.6.1:69c0db5050, Mar 21 2017, 01:21:04) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Darwin-18.6.0-x86_64-i386-64bit
+2019-06-13 14:46:05 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'dushu', 'FEED_FORMAT': 'csv', 'FEED_URI': 'book.csv', 'LOG_FILE': 'book.log', 'LOG_LEVEL': 'INFO', 'NEWSPIDER_MODULE': 'dushu.spiders', 'SPIDER_MODULES': ['dushu.spiders'], 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)     Chrome/75.0.3770.80 Safari/537.36'}
+2019-06-13 14:46:05 [scrapy.extensions.telnet] INFO: Telnet Password: 9a77e9b4bc3d22bf
+2019-06-13 14:46:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2019-06-13 14:46:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'dushu.middlewares.DushuDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-06-13 14:46:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-06-13 14:46:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['dushu.pipelines.DushuPipeline']
+2019-06-13 14:46:05 [scrapy.core.engine] INFO: Spider opened
+2019-06-13 14:46:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-06-13 14:46:05 [book] INFO: Spider opened: book
+2019-06-13 14:46:05 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/1001.html-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13475997/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473167/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473168/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473169/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473170/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473900/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473901/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473902/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473903/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473904/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473905/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473906/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473907/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473908/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473909/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/13473910/-> 路过下载中间件 <-
+2019-06-13 14:46:05 [book] INFO: https://www.dushu.com/book/1001_13.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1618.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: {'name': '增广贤文全鉴（典藏诵读版）', 'img': 'https://img.dushu.com/2019/06/10/095830280125322932.jpg_200.jpg', 'isbn': '9787518060917', 'publish_date': '2019-06-01', 'pages': '320'}
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1617.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1015.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1014.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1013.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1012.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1011.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: {'name': '墨子新解', 'img': 'https://img.dushu.com/2019/05/24/094935962106848.png_200.jpg', 'isbn': '9787010204000', 'publish_date': '2019-03-01', 'pages': '670'}
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1008.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1112.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1007.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1005.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: {'name': '庄子新解', 'img': 'https://img.dushu.com/2019/05/24/094937152106846421.png_200.jpg', 'isbn': '9787010203997', 'publish_date': '2019-03-01', 'pages': '538'}
+2019-06-13 14:46:06 [book] INFO: {'name': '婉约词全鉴（典藏诵读版）', 'img': 'https://img.dushu.com/2019/05/20/0953555414842484.jpg_200.jpg', 'isbn': '9787518060900', 'publish_date': '2019-05-01', 'pages': '320'}
+2019-06-13 14:46:06 [book] INFO: {'name': '智囊全鉴（典藏诵读版）', 'img': 'https://img.dushu.com/2019/05/20/0953566414841405.jpg_200.jpg', 'isbn': '9787518061310', 'publish_date': '2019-05-01', 'pages': '320'}
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1094.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: {'name': '曾子文章学（套装全2册）', 'img': 'https://img.dushu.com/2019/05/24/094934822106849136.jpg_200.jpg', 'isbn': '9787100167840', 'publish_date': '2019-03-01', 'pages': None}
+2019-06-13 14:46:06 [book] INFO: {'name': '孝经全鉴（典藏诵读版）', 'img': 'https://img.dushu.com/2019/05/20/09535814841165.jpg_200.jpg', 'isbn': '9787518060818', 'publish_date': '2019-05-01', 'pages': '320'}
+2019-06-13 14:46:06 [book] INFO: {'name': '孙子兵法新解', 'img': 'https://img.dushu.com/2019/05/24/094938232106848166.png_200.jpg', 'isbn': '9787010204017', 'publish_date': '2019-03-01', 'pages': '282'}
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1004.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1003.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1222.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: {'name': '陪孩子读古诗词（套装共4册）', 'img': 'https://img.dushu.com/2019/05/20/095359374847370.jpg_200.jpg', 'isbn': '9787201145471', 'publish_date': '2019-05-01', 'pages': '732'}
+2019-06-13 14:46:06 [book] INFO: {'name': '小窗幽记', 'img': 'https://img.dushu.com/2019/05/24/09494061106848101.jpg_200.jpg', 'isbn': '9787556833993', 'publish_date': '2019-04-01', 'pages': '437'}
+2019-06-13 14:46:06 [book] INFO: {'name': '老子新解', 'img': 'https://img.dushu.com/2019/05/24/094933672106849899.png_200.jpg', 'isbn': '9787010203973', 'publish_date': '2019-03-01', 'pages': '222'}
+2019-06-13 14:46:06 [book] INFO: {'name': '论语新解', 'img': 'https://img.dushu.com/2019/05/24/094931875106841916.png_200.jpg', 'isbn': '9787010203980', 'publish_date': '2019-03-01', 'pages': '442'}
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1163.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1082.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1079.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1081.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: {'name': '启蒙先知：严复、梁启超的思想革命', 'img': 'https://img.dushu.com/2019/05/24/094941202106843749.jpg_200.jpg', 'isbn': '9787520709835', 'publish_date': '2019-06-01', 'pages': '360'}
+2019-06-13 14:46:06 [book] INFO: {'name': '礼记全鉴（典藏诵读版）', 'img': 'https://img.dushu.com/2019/05/24/094944952106844699.jpg_200.jpg', 'isbn': '9787518060931', 'publish_date': '2019-05-01', 'pages': '320'}
+2019-06-13 14:46:06 [book] INFO: {'name': '幽梦影：一部才子之书，一字一句，片玉碎金', 'img': 'https://img.dushu.com/2019/05/24/094946222106848603.jpg_200.jpg', 'isbn': '9787541224454', 'publish_date': '2019-05-01', 'pages': None}
+2019-06-13 14:46:06 [book] INFO: {'name': '孙子兵法', 'img': 'https://img.dushu.com/2019/05/24/09495038110684599.jpg_200.jpg', 'isbn': '9787569927962', 'publish_date': '2019-04-01', 'pages': '280'}
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1078.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1077.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1001.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/1001_12.html-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/13433586/-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/13433587/-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/13433588/-> 路过下载中间件 <-
+2019-06-13 14:46:06 [book] INFO: https://www.dushu.com/book/13433589/-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/13433572/-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/13433573/-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/13433574/-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/13433575/-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/13411293/-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/13411294/-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/13412894/-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/13414044/-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/1011_13.html-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/1011_12.html-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/1011_11.html-> 路过下载中间件 <-
+2019-06-13 14:46:07 [book] INFO: https://www.dushu.com/book/1011_10.html-> 路过下载中间件 <-
+2019-06-13 14:46:08 [book] INFO: https://www.dushu.com/book/1025.html-> 路过下载中间件 <-
+2019-06-13 14:46:08 [book] INFO: https://www.dushu.com/book/1024.html-> 路过下载中间件 <-
+2019-06-13 14:46:08 [book] INFO: https://www.dushu.com/book/1023.html-> 路过下载中间件 <-
+2019-06-13 14:46:08 [book] INFO: https://www.dushu.com/book/1022.html-> 路过下载中间件 <-
+2019-06-13 14:46:08 [book] INFO: https://www.dushu.com/book/1222_13.html-> 路过下载中间件 <-
+2019-06-13 14:46:08 [book] INFO: https://www.dushu.com/book/1222_12.html-> 路过下载中间件 <-
+2019-06-13 14:46:08 [book] INFO: https://www.dushu.com/book/1222_11.html-> 路过下载中间件 <-
+2019-06-13 14:46:08 [book] INFO: https://www.dushu.com/book/1222_10.html-> 路过下载中间件 <-
+2019-06-13 14:46:08 [book] INFO: {'name': '基于知识关系图的外语学习系统开发及应用研究', 'img': 'https://img.dushu.com/2018/05/31/12253998687651.jpg_200.jpg', 'isbn': '9787519219031', 'publish_date': '2016-10-01', 'pages': '109'}
+2019-06-13 14:46:08 [book] INFO: {'name': '中国英语专业学生产出性态度词汇发展研究', 'img': 'https://img.dushu.com/2018/05/31/12254089767142.jpg_200.jpg', 'isbn': '9787502053345', 'publish_date': '2016-12-01', 'pages': '307'}
+2019-06-13 14:46:08 [book] INFO: {'name': '翻译论坛（2016.4）', 'img': 'https://img.dushu.com/2018/05/31/12254180530271.jpg_200.jpg', 'isbn': '9787305174759', 'publish_date': '2016-12-01', 'pages': '94'}
+2019-06-13 14:46:08 [book] INFO: {'name': '抗拒现代：生态后现代视域下的华兹华斯诗歌研究', 'img': 'https://img.dushu.com/2018/05/31/12254285423716.jpg_200.jpg', 'isbn': '9787544643467', 'publish_date': '2016-11-01', 'pages': '136'}
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/1604.html-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/1223.html-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/1221.html-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/1220.html-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: {'name': '英汉基本颜色词对比研究', 'img': 'https://img.dushu.com/2018/05/31/12252491692702.jpg_200.jpg', 'isbn': '9787507839777', 'publish_date': '2017-06-01', 'pages': None}
+2019-06-13 14:46:09 [book] INFO: {'name': '基于中国外语学习者视角的显性与隐性学习', 'img': 'https://img.dushu.com/2018/05/31/12252585691712.jpg_200.jpg', 'isbn': '9787519212865', 'publish_date': '2016-04-01', 'pages': '192'}
+2019-06-13 14:46:09 [book] INFO: {'name': '汪榕培学术研究文集', 'img': 'https://img.dushu.com/2018/05/31/12252679490721.jpg_200.jpg', 'isbn': '9787544646369', 'publish_date': '2017-06-01', 'pages': '459'}
+2019-06-13 14:46:09 [book] INFO: {'name': '英国社会与文化', 'img': 'https://img.dushu.com/2018/05/31/1225277046093.jpg_200.jpg', 'isbn': '9787544646109', 'publish_date': '2017-04-01', 'pages': '224'}
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/13434243/-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/13434244/-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/13434245/-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/13434716/-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: {'name': '中华经典藏书谦德国学文库 礼记', 'img': 'https://img.dushu.com/2018/03/26/20160229161825.jpg_200.jpg', 'isbn': '9787512647381', 'publish_date': '2017-06-01', 'pages': None}
+2019-06-13 14:46:09 [book] INFO: {'name': '中华经典藏书谦德国学文库 诗经', 'img': 'https://img.dushu.com/2018/03/26/20160331235752.jpg_200.jpg', 'isbn': '9787512647411', 'publish_date': '2017-06-01', 'pages': None}
+2019-06-13 14:46:09 [book] INFO: {'name': '论语集释（全3册）', 'img': 'https://img.dushu.com/2018/03/28/104119583183689593.jpg_200.jpg', 'isbn': '9787101125016', 'publish_date': '2018-03-01', 'pages': '1849'}
+2019-06-13 14:46:09 [book] INFO: {'name': '儒藏（精华编51经部礼类礼记之属 精）', 'img': 'https://img.dushu.com/2018/03/30/11083653014695.jpg_200.jpg', 'isbn': '9787301117699', 'publish_date': '2016-09-01', 'pages': None}
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/1077_13.html-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/1077_12.html-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/1077_11.html-> 路过下载中间件 <-
+2019-06-13 14:46:09 [book] INFO: https://www.dushu.com/book/1077_10.html-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/1157.html-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/1187.html-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/1186.html-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/1616.html-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/1165.html-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/1164.html-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/1162.html-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/1161.html-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/10485083/-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/11102579/-> 路过下载中间件 <-
+2019-06-13 14:46:10 [book] INFO: https://www.dushu.com/book/11390771/-> 路过下载中间件 <-
+2019-06-13 14:46:11 [book] INFO: https://www.dushu.com/book/1023_2.html-> 路过下载中间件 <-
+2019-06-13 14:46:11 [book] INFO: https://www.dushu.com/book/13475513/-> 路过下载中间件 <-
+2019-06-13 14:46:11 [book] INFO: https://www.dushu.com/book/13474027/-> 路过下载中间件 <-
+2019-06-13 14:46:11 [book] INFO: https://www.dushu.com/book/13382228/-> 路过下载中间件 <-
+2019-06-13 14:46:11 [book] INFO: https://www.dushu.com/book/13384011/-> 路过下载中间件 <-
+2019-06-13 14:46:11 [book] INFO: {'name': '孝经诠解', 'img': 'https://img.dushu.com/2018/06/06/101411891137569034.jpg_200.jpg', 'isbn': '9787547048153', 'publish_date': '2018-07-01', 'pages': None}
+2019-06-13 14:46:11 [book] INFO: {'name': '中庸诠解', 'img': 'https://img.dushu.com/2018/06/06/10141345137568271.jpg_200.jpg', 'isbn': '9787547048108', 'publish_date': '2018-07-01', 'pages': '220'}
+2019-06-13 14:46:11 [book] INFO: {'name': '庄子', 'img': 'https://img.dushu.com/2018/06/06/101421660137563866.jpg_200.jpg', 'isbn': '9787100157537', 'publish_date': '2018-04-01', 'pages': '637'}
+2019-06-13 14:46:11 [book] INFO: https://www.dushu.com/book/13410104/-> 路过下载中间件 <-
+2019-06-13 14:46:11 [book] INFO: https://www.dushu.com/book/13410105/-> 路过下载中间件 <-
+2019-06-13 14:46:11 [book] INFO: https://www.dushu.com/book/13413025/-> 路过下载中间件 <-
+2019-06-13 14:46:11 [book] INFO: {'name': '山海易经 六十四卦图解山海经异兽', 'img': 'https://img.dushu.com/2018/06/11/07275345482322957.jpg_200.jpg', 'isbn': '9787115474803', 'publish_date': '2018-06-01', 'pages': '212'}
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/1220_13.html-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/1220_12.html-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/1220_11.html-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/1220_10.html-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/1220_9.html-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/13475859/-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/13471571/-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/13471572/-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/13453286/-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/13453287/-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/13453288/-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/13453289/-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: https://www.dushu.com/book/13454130/-> 路过下载中间件 <-
+2019-06-13 14:46:12 [book] INFO: {'name': '经学通论', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1954-01-01', 'pages': '369页'}
+2019-06-13 14:46:13 [book] INFO: {'name': '春秋左传正义', 'img': 'https://img.dushu.com/2006/10/29/06120571822725.jpg_200.jpg', 'isbn': '9787301026236', 'publish_date': '1999-01-01', 'pages': '3册，1724页'}
+2019-06-13 14:46:13 [book] INFO: {'name': '大学中庸论语孟子（共4册）', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': '9787532535835', 'publish_date': '1900-01-01', 'pages': None}
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/1186_2.html-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/13453278/-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/13453279/-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: {'name': '湘南木雕（精）', 'img': 'https://img.dushu.com/2019/06/05/11331927250249286.jpg_200.jpg', 'isbn': '9787503895333', 'publish_date': '2018-12-01', 'pages': None}
+2019-06-13 14:46:13 [book] INFO: {'name': '东莞老手艺：历史时光里的民间记忆', 'img': 'https://img.dushu.com/2019/05/24/095511715106843001.jpg_200.jpg', 'isbn': '9787507756432', 'publish_date': '2018-12-01', 'pages': '190'}
+2019-06-13 14:46:13 [book] INFO: {'name': '道入匠心 文房古玩', 'img': 'https://img.dushu.com/2017/10/15/10005561481519.jpg_200.jpg', 'isbn': '9787534045110', 'publish_date': '2015-08-01', 'pages': None}
+2019-06-13 14:46:13 [book] INFO: {'name': '一路采撷', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': '9787513409902', 'publish_date': '2017-05-01', 'pages': None}
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/1186_13.html-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/1186_12.html-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/1186_11.html-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/1186_10.html-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/1186_9.html-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: {'name': '翰墨瑰宝 上海图书馆藏珍本碑帖丛刊（第五辑）', 'img': 'https://img.dushu.com/2018/03/24/0939436331510.jpg_200.jpg', 'isbn': '9787532584017', 'publish_date': '2017-06-01', 'pages': '374'}
+2019-06-13 14:46:13 [book] INFO: {'name': '翰墨瑰宝 上海图书馆藏珍本碑帖丛刊（第四辑 套装共5册）', 'img': 'https://img.dushu.com/2018/03/24/09394459236400.jpg_200.jpg', 'isbn': '9787532584000', 'publish_date': '2017-06-01', 'pages': '672'}
+2019-06-13 14:46:13 [book] INFO: {'name': '泥塑教学', 'img': 'https://img.dushu.com/2018/03/28/104544583183686676.jpg_200.jpg', 'isbn': '9787541075582', 'publish_date': '2018-03-01', 'pages': '48'}
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/1168.html-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/1167.html-> 路过下载中间件 <-
+2019-06-13 14:46:13 [book] INFO: https://www.dushu.com/book/1166.html-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/1173.html-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/1172.html-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/1165_13.html-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/1165_12.html-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/1023_1.html-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: {'name': '海上牧场', 'img': 'https://img.dushu.com/2019/06/05/114415992250241648.jpg_200.jpg', 'isbn': '9787521203943', 'publish_date': '2019-05-01', 'pages': '251'}
+2019-06-13 14:46:14 [book] INFO: {'name': '夏花账2：我用古老的方式爱过你', 'img': 'https://img.dushu.com/2019/05/14/105835872127929893.jpg_200.jpg', 'isbn': '9787559435125', 'publish_date': '2019-05-01', 'pages': None}
+2019-06-13 14:46:14 [book] INFO: {'name': '夏花账3：我的灵魂每天发现一个王国', 'img': 'https://img.dushu.com/2019/05/14/105836846127922816.jpg_200.jpg', 'isbn': '9787559434920', 'publish_date': '2019-05-01', 'pages': '224'}
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/12728590/-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/12728591/-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/12737308/-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: {'name': '混唐后传', 'img': 'https://img.dushu.com/2018/11/14/105027517286688953.jpg_200.jpg', 'isbn': '9787548061960', 'publish_date': '2018-10-01', 'pages': '172'}
+2019-06-13 14:46:14 [book] INFO: {'name': '石点头', 'img': 'https://img.dushu.com/2018/11/14/105028490286686652.jpg_200.jpg', 'isbn': '9787548061816', 'publish_date': '2018-10-01', 'pages': '300'}
+2019-06-13 14:46:14 [book] INFO: {'name': '英烈传 续英烈传', 'img': 'https://img.dushu.com/2018/11/14/105029445286687939.jpg_200.jpg', 'isbn': '9787548062011', 'publish_date': '2018-10-01', 'pages': '536'}
+2019-06-13 14:46:14 [book] INFO: {'name': '青山在', 'img': 'https://img.dushu.com/2018/11/14/105030357286684766.jpg_200.jpg', 'isbn': '9787302493822', 'publish_date': '2018-10-01', 'pages': '800'}
+2019-06-13 14:46:14 [book] INFO: {'name': '文明小史', 'img': 'https://img.dushu.com/2018/11/19/1556153922364259.jpg_200.jpg', 'isbn': '9787548061809', 'publish_date': '2018-10-01', 'pages': '444'}
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/12677111/-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/12685106/-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/12689510/-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/12689511/-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: https://www.dushu.com/book/12689512/-> 路过下载中间件 <-
+2019-06-13 14:46:14 [book] INFO: {'name': '说唐全传', 'img': 'https://img.dushu.com/2018/11/14/105019627286683535.jpg_200.jpg', 'isbn': '9787548061731', 'publish_date': '2018-10-01', 'pages': None}
+2019-06-13 14:46:14 [book] INFO: {'name': '三遂平妖传', 'img': 'https://img.dushu.com/2018/11/14/105020565286683186.jpg_200.jpg', 'isbn': '9787548061779', 'publish_date': '2018-10-01', 'pages': '136'}
+2019-06-13 14:46:15 [book] INFO: https://www.dushu.com/book/12650451/-> 路过下载中间件 <-
+2019-06-13 14:46:15 [book] INFO: https://www.dushu.com/book/12650452/-> 路过下载中间件 <-
+2019-06-13 14:46:15 [book] INFO: https://www.dushu.com/book/12650453/-> 路过下载中间件 <-
+2019-06-13 14:46:15 [book] INFO: https://www.dushu.com/book/13063162/-> 路过下载中间件 <-
+2019-06-13 14:46:15 [book] INFO: https://www.dushu.com/book/13063163/-> 路过下载中间件 <-
+2019-06-13 14:46:15 [book] INFO: https://www.dushu.com/book/13063164/-> 路过下载中间件 <-
+2019-06-13 14:46:15 [book] INFO: https://www.dushu.com/book/13063165/-> 路过下载中间件 <-
+2019-06-13 14:46:15 [book] INFO: https://www.dushu.com/book/13063166/-> 路过下载中间件 <-
+2019-06-13 14:46:16 [book] INFO: https://www.dushu.com/book/13063150/-> 路过下载中间件 <-
+2019-06-13 14:46:16 [book] INFO: https://www.dushu.com/book/13063151/-> 路过下载中间件 <-
+2019-06-13 14:46:16 [book] INFO: https://www.dushu.com/book/13063152/-> 路过下载中间件 <-
+2019-06-13 14:46:16 [book] INFO: https://www.dushu.com/book/1186_19.html-> 路过下载中间件 <-
+2019-06-13 14:46:16 [book] INFO: https://www.dushu.com/book/1186_18.html-> 路过下载中间件 <-
+2019-06-13 14:46:16 [book] INFO: https://www.dushu.com/book/1186_17.html-> 路过下载中间件 <-
+2019-06-13 14:46:16 [book] INFO: https://www.dushu.com/book/1186_16.html-> 路过下载中间件 <-
+2019-06-13 14:46:16 [book] INFO: https://www.dushu.com/book/1186_15.html-> 路过下载中间件 <-
+2019-06-13 14:46:16 [book] INFO: {'name': '国美之路雕塑中国：中国美术学院雕塑系85年历史文献集（精）', 'img': 'https://img.dushu.com/2014/03/15/02013980382951.jpg_200.jpg', 'isbn': '9787550306196', 'publish_date': '2013-12-01', 'pages': '553'}
+2019-06-13 14:46:16 [book] INFO: {'name': '陶瓷工艺雕塑制作技法', 'img': 'https://img.dushu.com/2014/03/18/01434261446557.jpg_200.jpg', 'isbn': '9787531455370', 'publish_date': '2013-10-01', 'pages': '147'}
+2019-06-13 14:46:16 [book] INFO: {'name': '中国大百科全书：中国雕塑艺术（普及版美术卷）', 'img': 'https://img.dushu.com/2014/04/19/03504070454020.jpg_200.jpg', 'isbn': '9787500093169', 'publish_date': '2014-02-01', 'pages': '128'}
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/1166_13.html-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/1166_12.html-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/1166_11.html-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: {'name': '雕塑与建筑和环境', 'img': 'https://img.dushu.com/2013/10/21/14571610117143.jpg_200.jpg', 'isbn': '9787560851976', 'publish_date': '2013-08-01', 'pages': '90'}
+2019-06-13 14:46:17 [book] INFO: {'name': '名家悟核雕：核雕精品赏析', 'img': 'https://img.dushu.com/2013/11/18/01453445771258.jpg_200.jpg', 'isbn': '9787115333162', 'publish_date': '2013-11-01', 'pages': '110'}
+2019-06-13 14:46:17 [book] INFO: {'name': '藏传佛教视觉艺术典藏：塑像', 'img': 'https://img.dushu.com/2013/11/25/01551988369933.jpg_200.jpg', 'isbn': '9787225046044', 'publish_date': '2014-01-01', 'pages': '98'}
+2019-06-13 14:46:17 [book] INFO: {'name': '雕塑中国：当代雕塑与美术院校创作教学研讨会论文集', 'img': 'https://img.dushu.com/2013/11/25/01552135057484.jpg_200.jpg', 'isbn': '9787550305380', 'publish_date': '2013-09-01', 'pages': '131'}
+2019-06-13 14:46:17 [book] INFO: {'name': '2012成都重庆当代雕塑作品展：大荒西经', 'img': 'https://img.dushu.com/2013/11/25/01552170812553.jpg_200.jpg', 'isbn': '9787229063504', 'publish_date': '2013-03-01', 'pages': '116'}
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/12946843/-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/12946844/-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/12946845/-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/12946846/-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/12946847/-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: {'name': '中国雕塑艺术', 'img': 'https://img.dushu.com/2013/09/11/01145253723067.jpg_200.jpg', 'isbn': '9787102063621', 'publish_date': '2013-07-01', 'pages': '140'}
+2019-06-13 14:46:17 [book] INFO: {'name': '学院雕塑（第18辑·2013NO.2）', 'img': 'https://img.dushu.com/2013/09/11/01145481479311.jpg_200.jpg', 'isbn': '9787548022183', 'publish_date': '2013-06-01', 'pages': None}
+2019-06-13 14:46:17 [book] INFO: {'name': '琢之道：吴松江石雕艺术作品选', 'img': 'https://img.dushu.com/2013/09/11/01145721718114.jpg_200.jpg', 'isbn': '9787550300835', 'publish_date': '2013-05-01', 'pages': '176'}
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/1165_17.html-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/1165_16.html-> 路过下载中间件 <-
+2019-06-13 14:46:17 [book] INFO: https://www.dushu.com/book/1165_15.html-> 路过下载中间件 <-
+2019-06-13 14:46:18 [book] INFO: {'name': '三国演义（彝文版）', 'img': 'https://img.dushu.com/2016/09/09/12134596117561859.jpg_200.jpg', 'isbn': '9787540948580', 'publish_date': '2011-11-01', 'pages': '202'}
+2019-06-13 14:46:18 [book] INFO: {'name': '水浒传（彝文版）', 'img': 'https://img.dushu.com/2016/09/09/121345976101565447.jpg_200.jpg', 'isbn': '9787540948627', 'publish_date': '2011-11-01', 'pages': '202'}
+2019-06-13 14:46:18 [book] INFO: {'name': '红楼梦（绣像大字本共30册 精）', 'img': 'https://img.dushu.com/2016/09/09/12134815517565216.jpg_200.jpg', 'isbn': '9787532557332', 'publish_date': '2010-12-01', 'pages': None}
+2019-06-13 14:46:18 [book] INFO: {'name': '水浒传（绣像大字本共30册 精）', 'img': 'https://img.dushu.com/2016/09/09/12134882017565466.jpg_200.jpg', 'isbn': '9787532557318', 'publish_date': '2010-12-01', 'pages': None}
+2019-06-13 14:46:18 [book] INFO: {'name': '水浒传', 'img': 'https://img.dushu.com/2016/09/09/12141618317566704.jpg_200.jpg', 'isbn': '9787500142485', 'publish_date': '2016-06-01', 'pages': '258'}
+2019-06-13 14:46:18 [book] INFO: https://www.dushu.com/book/1165_19.html-> 路过下载中间件 <-
+2019-06-13 14:46:18 [book] INFO: https://www.dushu.com/book/1165_18.html-> 路过下载中间件 <-
+2019-06-13 14:46:18 [book] INFO: https://www.dushu.com/book/1165_14.html-> 路过下载中间件 <-
+2019-06-13 14:46:18 [book] INFO: https://www.dushu.com/book/1172_13.html-> 路过下载中间件 <-
+2019-06-13 14:46:18 [book] INFO: https://www.dushu.com/book/1172_12.html-> 路过下载中间件 <-
+2019-06-13 14:46:18 [book] INFO: {'name': '说岳全传杨家将（图文精释版）', 'img': 'https://img.dushu.com/2016/09/09/12133183417565853.jpg_200.jpg', 'isbn': '9787553501079', 'publish_date': '2014-12-01', 'pages': '632'}
+2019-06-13 14:46:18 [book] INFO: {'name': '今古奇观（图文精释版）', 'img': 'https://img.dushu.com/2016/09/09/12133293717569101.jpg_200.jpg', 'isbn': '9787807407942', 'publish_date': '2014-12-01', 'pages': '474'}
+2019-06-13 14:46:18 [book] INFO: {'name': '聊斋志异（图文精释版）', 'img': 'https://img.dushu.com/2016/09/09/12133373417567607.jpg_200.jpg', 'isbn': '9787553501178', 'publish_date': '2014-12-01', 'pages': '646'}
+2019-06-13 14:46:18 [book] INFO: https://www.dushu.com/book/1172_11.html-> 路过下载中间件 <-
+2019-06-13 14:46:18 [book] INFO: https://www.dushu.com/book/1172_10.html-> 路过下载中间件 <-
+2019-06-13 14:46:18 [book] INFO: https://www.dushu.com/book/12900307/-> 路过下载中间件 <-
+2019-06-13 14:46:18 [book] INFO: https://www.dushu.com/book/12900292/-> 路过下载中间件 <-
+2019-06-13 14:46:19 [book] INFO: https://www.dushu.com/book/12259028/-> 路过下载中间件 <-
+2019-06-13 14:46:19 [book] INFO: https://www.dushu.com/book/12259029/-> 路过下载中间件 <-
+2019-06-13 14:46:19 [book] INFO: {'name': '撒都民间故事数位典藏', 'img': 'https://img.dushu.com/2016/03/31/09391178423112990.jpg_200.jpg', 'isbn': '9787105140596', 'publish_date': '2015-12-01', 'pages': '627'}
+2019-06-13 14:46:19 [book] INFO: https://www.dushu.com/book/12315318/-> 路过下载中间件 <-
+2019-06-13 14:46:19 [book] INFO: https://www.dushu.com/book/1166_19.html-> 路过下载中间件 <-
+2019-06-13 14:46:19 [book] INFO: https://www.dushu.com/book/1166_18.html-> 路过下载中间件 <-
+2019-06-13 14:46:19 [book] INFO: https://www.dushu.com/book/1166_17.html-> 路过下载中间件 <-
+2019-06-13 14:46:19 [book] INFO: https://www.dushu.com/book/1166_16.html-> 路过下载中间件 <-
+2019-06-13 14:46:19 [book] INFO: https://www.dushu.com/book/1166_15.html-> 路过下载中间件 <-
+2019-06-13 14:46:20 [book] INFO: {'name': '曼德拉故乡的民间故事', 'img': 'https://img.dushu.com/2016/03/31/09391163238521613.jpg_200.jpg', 'isbn': '9787209090520', 'publish_date': '2015-12-01', 'pages': '357'}
+2019-06-13 14:46:20 [book] INFO: {'name': '农家警察故事', 'img': 'https://img.dushu.com/2016/03/31/09391154913476151.jpg_200.jpg', 'isbn': '9787555403975', 'publish_date': '2015-12-01', 'pages': '221'}
+2019-06-13 14:46:20 [book] INFO: {'name': '辽宁省少数民族民间故事大系：满族卷（套装上下卷）', 'img': 'https://img.dushu.com/2016/03/31/093911666201887959.jpg_200.jpg', 'isbn': '9787105140381', 'publish_date': '2015-12-01', 'pages': '863'}
+2019-06-13 14:46:20 [book] INFO: {'name': '各领风骚：民间历史人物故事', 'img': 'https://img.dushu.com/2016/03/31/093911695185685135.jpg_200.jpg', 'isbn': '9787562271901', 'publish_date': '2015-12-01', 'pages': '116'}
+2019-06-13 14:46:20 [book] INFO: https://www.dushu.com/book/12305040/-> 路过下载中间件 <-
+2019-06-13 14:46:20 [book] INFO: https://www.dushu.com/book/12305662/-> 路过下载中间件 <-
+2019-06-13 14:46:20 [book] INFO: https://www.dushu.com/book/12305663/-> 路过下载中间件 <-
+2019-06-13 14:46:20 [book] INFO: https://www.dushu.com/book/12305664/-> 路过下载中间件 <-
+2019-06-13 14:46:20 [book] INFO: https://www.dushu.com/book/12305665/-> 路过下载中间件 <-
+2019-06-13 14:46:20 [book] INFO: https://www.dushu.com/book/12308132/-> 路过下载中间件 <-
+2019-06-13 14:46:21 [book] INFO: https://www.dushu.com/book/12839658/-> 路过下载中间件 <-
+2019-06-13 14:46:21 [book] INFO: {'name': '原罪的证明', 'img': 'https://img.dushu.com/2015/12/26/12332949064327828.jpg_200.jpg', 'isbn': '9787512636552', 'publish_date': '2015-06-01', 'pages': None}
+2019-06-13 14:46:21 [book] INFO: {'name': '狄公案', 'img': 'https://img.dushu.com/2015/12/26/12332299269887649.jpg_200.jpg', 'isbn': '9787508084640', 'publish_date': '2015-06-01', 'pages': '263'}
+2019-06-13 14:46:21 [book] INFO: https://www.dushu.com/book/11109414/-> 路过下载中间件 <-
+2019-06-13 14:46:21 [book] INFO: https://www.dushu.com/book/11109415/-> 路过下载中间件 <-
+2019-06-13 14:46:21 [book] INFO: https://www.dushu.com/book/11109416/-> 路过下载中间件 <-
+2019-06-13 14:46:21 [book] INFO: https://www.dushu.com/book/11109417/-> 路过下载中间件 <-
+2019-06-13 14:46:21 [book] INFO: https://www.dushu.com/book/11109418/-> 路过下载中间件 <-
+2019-06-13 14:46:22 [book] INFO: {'name': '诗词学步', 'img': 'https://img.dushu.com/2011/11/23/1332394158167.jpg_200.jpg', 'isbn': '9787544042741', 'publish_date': '2011-08-01', 'pages': '218'}
+2019-06-13 14:46:22 [book] INFO: {'name': '炉边诗话（精选本）', 'img': 'https://img.dushu.com/2011/11/23/13323932238318.jpg_200.jpg', 'isbn': '9787547502907', 'publish_date': '2011-08-01', 'pages': '191'}
+2019-06-13 14:46:22 [book] INFO: {'name': '古诗接龙五言绝句', 'img': 'https://img.dushu.com/2012/03/02/04350052052946.jpg_200.jpg', 'isbn': '9787510110627', 'publish_date': '2012-01-01', 'pages': '110'}
+2019-06-13 14:46:22 [book] INFO: https://www.dushu.com/book/11109149/-> 路过下载中间件 <-
+2019-06-13 14:46:22 [book] INFO: https://www.dushu.com/book/11109152/-> 路过下载中间件 <-
+2019-06-13 14:46:22 [book] INFO: https://www.dushu.com/book/11109153/-> 路过下载中间件 <-
+2019-06-13 14:46:22 [book] INFO: https://www.dushu.com/book/11109155/-> 路过下载中间件 <-
+2019-06-13 14:46:22 [book] INFO: https://www.dushu.com/book/11109156/-> 路过下载中间件 <-
+2019-06-13 14:46:22 [book] INFO: https://www.dushu.com/book/11109146/-> 路过下载中间件 <-
+2019-06-13 14:46:23 [book] INFO: {'name': '李煜词传：一种销魂是李郎（精装珍藏版）', 'img': 'https://img.dushu.com/2012/01/30/15460979767899.jpg_200.jpg', 'isbn': '9787547701270', 'publish_date': '2011-12-01', 'pages': '280'}
+2019-06-13 14:46:23 [book] INFO: {'name': '唐诗宋词元曲三百首（全四卷）', 'img': 'https://img.dushu.com/2012/04/14/14030794537542.jpg_200.jpg', 'isbn': '9787514602975', 'publish_date': '2012-01-01', 'pages': '全四册'}
+2019-06-13 14:46:23 [book] INFO: {'name': '宋词小札', 'img': 'https://img.dushu.com/2012/02/03/17002538097081.jpg_200.jpg', 'isbn': '9787515302355', 'publish_date': '2011-12-01', 'pages': '303'}
+2019-06-13 14:46:23 [book] INFO: {'name': '全唐诗（全四卷）', 'img': 'https://img.dushu.com/2012/04/14/1403087103078.jpg_200.jpg', 'isbn': '9787514602845', 'publish_date': '2012-01-01', 'pages': '全4册'}
+2019-06-13 14:46:23 [book] INFO: https://www.dushu.com/book/12224539/-> 路过下载中间件 <-
+2019-06-13 14:46:23 [book] INFO: https://www.dushu.com/book/11109215/-> 路过下载中间件 <-
+2019-06-13 14:46:23 [book] INFO: https://www.dushu.com/book/11109216/-> 路过下载中间件 <-
+2019-06-13 14:46:23 [book] INFO: https://www.dushu.com/book/11109217/-> 路过下载中间件 <-
+2019-06-13 14:46:23 [book] INFO: https://www.dushu.com/book/11109218/-> 路过下载中间件 <-
+2019-06-13 14:46:23 [book] INFO: https://www.dushu.com/book/11109219/-> 路过下载中间件 <-
+2019-06-13 14:46:23 [book] INFO: https://www.dushu.com/book/11109193/-> 路过下载中间件 <-
+2019-06-13 14:46:23 [book] INFO: {'name': '唐宋词品鉴', 'img': 'https://img.dushu.com/2012/02/03/17002993532350.jpg_200.jpg', 'isbn': '9787515302386', 'publish_date': '2011-12-01', 'pages': '196'}
+2019-06-13 14:46:23 [book] INFO: {'name': '唐宋词选讲', 'img': 'https://img.dushu.com/2012/02/11/11252132515667.jpg_200.jpg', 'isbn': '9787515302379', 'publish_date': '2011-12-01', 'pages': '238'}
+2019-06-13 14:46:23 [book] INFO: {'name': '世界经典童话寓言神话民间故事（超值全彩珍藏版）', 'img': 'https://img.dushu.com/2015/05/27/081340122176723801.jpg_200.jpg', 'isbn': '9787550226715', 'publish_date': '2014-12-01', 'pages': '440'}
+2019-06-13 14:46:23 [book] INFO: {'name': '奶奶的意见：小喜剧、说唱、小小说', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '17页'}
+2019-06-13 14:46:23 [book] INFO: {'name': '姑娘的心事：小歌剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1960-01-01', 'pages': '48页'}
+2019-06-13 14:46:23 [book] INFO: {'name': '甜战：小调说唱、快板、唱词', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '11页'}
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12187018/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12188425/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12188426/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12188427/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12188428/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: {'name': '年青的一代', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1963-01-01', 'pages': '75页'}
+2019-06-13 14:46:24 [book] INFO: {'name': '森林晨曲：四幕五场话剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1900-01-01', 'pages': '90页'}
+2019-06-13 14:46:24 [book] INFO: {'name': '小菜歌：新唱本', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1957-01-01', 'pages': '16页'}
+2019-06-13 14:46:24 [book] INFO: {'name': '渠水长流花盛开：四幕话剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1900-01-01', 'pages': '70页'}
+2019-06-13 14:46:24 [book] INFO: {'name': '当家人', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1959-01-01', 'pages': '12页'}
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12188429/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: {'name': '中国京剧院演出剧本选集（第一集）', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1959-01-01', 'pages': '635页'}
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12188430/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12188432/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12188433/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12189777/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: {'name': '精打细算：曲艺', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1960-01-01', 'pages': '28页'}
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12189778/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12189779/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12224497/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: {'name': '识字岗', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '21页'}
+2019-06-13 14:46:24 [book] INFO: {'name': '唐诗名篇鉴赏', 'img': 'https://img.dushu.com/2011/11/23/1353323566397.jpg_200.jpg', 'isbn': '9787550200661', 'publish_date': '2011-05-01', 'pages': '350'}
+2019-06-13 14:46:24 [book] INFO: {'name': '要把人间变天堂：潮洲小演唱', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '29页'}
+2019-06-13 14:46:24 [book] INFO: https://www.dushu.com/book/12224470/-> 路过下载中间件 <-
+2019-06-13 14:46:24 [book] INFO: {'name': '人民公社好：粤曲小演唱', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '24页'}
+2019-06-13 14:46:24 [book] INFO: {'name': '一切为了大跃进：粤曲小演唱', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '64页'}
+2019-06-13 14:46:24 [book] INFO: {'name': '文化关：粤曲小演唱', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '40页'}
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224471/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: {'name': '养牛也要大跃进：独幕粤剧集', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '33页'}
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224472/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224473/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224474/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: {'name': '百科图说：元曲三百首', 'img': 'https://img.dushu.com/2011/03/24/23501860926589.jpg_200.jpg', 'isbn': '9787500085034', 'publish_date': '2011-01-01', 'pages': '全二册'}
+2019-06-13 14:46:25 [book] INFO: {'name': '仓央嘉措圣歌集（全新译本中文藏文对照）', 'img': 'https://img.dushu.com/2011/03/30/09441867110609.jpg_200.jpg', 'isbn': '9787530210871', 'publish_date': '2011-03-01', 'pages': '159'}
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224475/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: {'name': '晚唐-九世纪中叶的中国诗歌（827-860）', 'img': 'https://img.dushu.com/2011/03/30/0944239533417.jpg_200.jpg', 'isbn': '9787108035707', 'publish_date': '2011-01-01', 'pages': '556'}
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224476/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: {'name': '金元词一百首', 'img': 'https://img.dushu.com/2011/03/30/09442495345949.jpg_200.jpg', 'isbn': '9787807614173', 'publish_date': '2011-01-01', 'pages': '213'}
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224477/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: {'name': '元曲一百首', 'img': 'https://img.dushu.com/2011/03/30/0944257812765.jpg_200.jpg', 'isbn': '9787807614074', 'publish_date': '2011-01-01', 'pages': '193'}
+2019-06-13 14:46:25 [book] INFO: {'name': '唐诗一百首', 'img': 'https://img.dushu.com/2011/03/30/09442612574196.jpg_200.jpg', 'isbn': '9787807614470', 'publish_date': '2011-01-01', 'pages': '192'}
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224478/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224479/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: {'name': '宋诗一百首', 'img': 'https://img.dushu.com/2011/03/30/09442654620544.jpg_200.jpg', 'isbn': '9787807614081', 'publish_date': '2011-01-01', 'pages': '199'}
+2019-06-13 14:46:25 [book] INFO: {'name': '雨夜救渠：秦腔现代剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1959-01-01', 'pages': '9页'}
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224480/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224481/-> 路过下载中间件 <-
+2019-06-13 14:46:25 [book] INFO: https://www.dushu.com/book/12224482/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224483/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: {'name': '明诗一百首', 'img': 'https://img.dushu.com/2011/03/30/0944279689424.jpg_200.jpg', 'isbn': '9787807614098', 'publish_date': '2011-01-01', 'pages': '158'}
+2019-06-13 14:46:26 [book] INFO: {'name': '古诗一百首', 'img': 'https://img.dushu.com/2011/03/30/09442835984011.jpg_200.jpg', 'isbn': '9787807613626', 'publish_date': '2011-01-01', 'pages': '226'}
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224484/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: {'name': '唐诗', 'img': 'https://img.dushu.com/2011/04/06/0112027346113.jpg_200.jpg', 'isbn': '9787101078091', 'publish_date': '2011-03-01', 'pages': '219'}
+2019-06-13 14:46:26 [book] INFO: {'name': '笑看沧海欲成尘：唐诗中的仙神鬼怪', 'img': 'https://img.dushu.com/2011/04/06/01120302626.jpg_200.jpg', 'isbn': '9787530961841', 'publish_date': '2011-03-01', 'pages': '295'}
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224485/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: {'name': '诗经', 'img': 'https://img.dushu.com/2011/04/06/01120323427379.jpg_200.jpg', 'isbn': '9787101078114', 'publish_date': '2011-03-01', 'pages': '193'}
+2019-06-13 14:46:26 [book] INFO: {'name': '宋词三百首', 'img': 'https://img.dushu.com/2011/08/01/04134056223391.jpg_200.jpg', 'isbn': '9787546341613', 'publish_date': '2010-12-01', 'pages': '301'}
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224486/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224487/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224488/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: {'name': '全乐府', 'img': 'https://img.dushu.com/2011/08/01/04130667122781.jpg_200.jpg', 'isbn': '9787313071323', 'publish_date': '2011-03-01', 'pages': '全6册'}
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224489/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224490/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: {'name': '楚辞', 'img': 'https://img.dushu.com/2011/08/01/04131984384157.jpg_200.jpg', 'isbn': '9787507833171', 'publish_date': '2011-01-01', 'pages': '215'}
+2019-06-13 14:46:26 [book] INFO: {'name': '断肠声里忆平生', 'img': 'https://img.dushu.com/2011/08/01/04131943746867.jpg_200.jpg', 'isbn': '9787561353691', 'publish_date': '2011-01-01', 'pages': '216'}
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224491/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: {'name': '李白诗集', 'img': 'https://img.dushu.com/2011/08/01/04132267142278.jpg_200.jpg', 'isbn': '9787507833355', 'publish_date': '2011-01-01', 'pages': '328'}
+2019-06-13 14:46:26 [book] INFO: {'name': '六世达赖喇嘛仓央嘉措诗意三百年', 'img': 'https://img.dushu.com/2011/08/01/04132314040531.jpg_200.jpg', 'isbn': '9787802532526', 'publish_date': '2011-01-01', 'pages': '517'}
+2019-06-13 14:46:26 [book] INFO: {'name': '谁念西风独自凉', 'img': 'https://img.dushu.com/2011/08/01/04132379669430.jpg_200.jpg', 'isbn': '9787561353646', 'publish_date': '2011-01-01', 'pages': '181'}
+2019-06-13 14:46:26 [book] INFO: https://www.dushu.com/book/12224492/-> 路过下载中间件 <-
+2019-06-13 14:46:26 [book] INFO: {'name': '中华古典珍品·唐诗三百首', 'img': 'https://img.dushu.com/2011/08/01/041325500399.jpg_200.jpg', 'isbn': '9787546115719', 'publish_date': '2011-01-01', 'pages': '229'}
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224493/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224494/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224495/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224496/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: {'name': '楚辞', 'img': 'https://img.dushu.com/2011/08/01/04132640668666.jpg_200.jpg', 'isbn': '9787807156598', 'publish_date': '2011-01-01', 'pages': '222'}
+2019-06-13 14:46:27 [book] INFO: {'name': '随园诗话', 'img': 'https://img.dushu.com/2011/08/01/04132770310103.jpg_200.jpg', 'isbn': '9787560169552', 'publish_date': '2011-01-01', 'pages': '442'}
+2019-06-13 14:46:27 [book] INFO: {'name': '楚辞', 'img': 'https://img.dushu.com/2011/08/01/04133115616642.jpg_200.jpg', 'isbn': '9787560169453', 'publish_date': '2011-01-01', 'pages': '440'}
+2019-06-13 14:46:27 [book] INFO: {'name': '苏东坡文集', 'img': 'https://img.dushu.com/2011/08/01/0413322967913.jpg_200.jpg', 'isbn': '9787507833256', 'publish_date': '2011-01-01', 'pages': '314'}
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224498/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224499/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: {'name': '陆游诗词', 'img': 'https://img.dushu.com/2011/08/01/04133329665382.jpg_200.jpg', 'isbn': '9787507833270', 'publish_date': '2011-01-01', 'pages': '332'}
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224500/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: {'name': '中华古典珍品·宋词三百首', 'img': 'https://img.dushu.com/2011/08/01/04131831219715.jpg_200.jpg', 'isbn': '9787546115672', 'publish_date': '2011-01-01', 'pages': '220'}
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224501/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: {'name': '韩愈文集', 'img': 'https://img.dushu.com/2011/08/01/04132579684368.jpg_200.jpg', 'isbn': '9787507833201', 'publish_date': '2011-01-01', 'pages': '281'}
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224502/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: {'name': '白居易诗集', 'img': 'https://img.dushu.com/2011/08/01/04133351524268.jpg_200.jpg', 'isbn': '9787507833287', 'publish_date': '2011-01-01', 'pages': '295'}
+2019-06-13 14:46:27 [book] INFO: https://www.dushu.com/book/12224503/-> 路过下载中间件 <-
+2019-06-13 14:46:27 [book] INFO: {'name': '杜甫诗集', 'img': 'https://img.dushu.com/2011/08/01/04133417153167.jpg_200.jpg', 'isbn': '9787507833294', 'publish_date': '2011-01-01', 'pages': '245'}
+2019-06-13 14:46:27 [book] INFO: {'name': '乐府诗集', 'img': 'https://img.dushu.com/2011/08/01/04133556236048.jpg_200.jpg', 'isbn': '9787507833263', 'publish_date': '2011-01-01', 'pages': '384'}
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12224504/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: {'name': '辛稼轩词集', 'img': 'https://img.dushu.com/2011/08/01/04133573450333.jpg_200.jpg', 'isbn': '9787507833249', 'publish_date': '2011-01-01', 'pages': '287'}
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12224505/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12224506/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12224507/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12224508/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12224509/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: {'name': '王荆文公诗笺注（全三册）', 'img': 'https://img.dushu.com/2011/08/01/04133873422739.jpg_200.jpg', 'isbn': '9787532556762', 'publish_date': '2010-12-01', 'pages': '全3册'}
+2019-06-13 14:46:28 [book] INFO: {'name': '绝妙好词', 'img': 'https://img.dushu.com/2011/08/01/0413397851308.jpg_200.jpg', 'isbn': '9787546342016', 'publish_date': '2010-12-01', 'pages': '300'}
+2019-06-13 14:46:28 [book] INFO: {'name': '宋元明清诗词曲', 'img': 'https://img.dushu.com/2011/08/01/0413347961585.jpg_200.jpg', 'isbn': '9787508061542', 'publish_date': '2011-01-01', 'pages': '308'}
+2019-06-13 14:46:28 [book] INFO: {'name': '唐诗三百首', 'img': 'https://img.dushu.com/2011/08/01/04133956265923.jpg_200.jpg', 'isbn': '9787546341750', 'publish_date': '2010-12-01', 'pages': '298'}
+2019-06-13 14:46:28 [book] INFO: {'name': '我是人间惆怅客', 'img': 'https://img.dushu.com/2011/08/01/04132721895488.jpg_200.jpg', 'isbn': '9787561353622', 'publish_date': '2011-01-01', 'pages': '227'}
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12189780/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12189781/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: {'name': '乐府诗集', 'img': 'https://img.dushu.com/2011/08/01/04133751554142.jpg_200.jpg', 'isbn': '9787546343297', 'publish_date': '2010-12-01', 'pages': '304'}
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12189782/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: {'name': '杜甫·白居易集', 'img': 'https://img.dushu.com/2011/08/01/04133995339093.jpg_200.jpg', 'isbn': '9787546343457', 'publish_date': '2010-12-01', 'pages': '306'}
+2019-06-13 14:46:28 [book] INFO: https://www.dushu.com/book/12189783/-> 路过下载中间件 <-
+2019-06-13 14:46:28 [book] INFO: {'name': '诗经', 'img': 'https://img.dushu.com/2011/08/01/04133793760036.jpg_200.jpg', 'isbn': '9787546341804', 'publish_date': '2010-12-01', 'pages': '308'}
+2019-06-13 14:46:28 [book] INFO: {'name': '楚石北游诗', 'img': 'https://img.dushu.com/2011/08/01/04134015633859.jpg_200.jpg', 'isbn': '9787807156239', 'publish_date': '2010-12-01', 'pages': '231'}
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12192407/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12192408/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: {'name': '婉约词', 'img': 'https://img.dushu.com/2011/08/01/04134089035598.jpg_200.jpg', 'isbn': '9787546344089', 'publish_date': '2010-12-01', 'pages': '303'}
+2019-06-13 14:46:29 [book] INFO: {'name': '甲申集（八闽文献丛刊）', 'img': 'https://img.dushu.com/2011/08/01/04134242152283.jpg_200.jpg', 'isbn': '9787211062324', 'publish_date': '2010-12-01', 'pages': '591'}
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12192410/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: {'name': '元曲三百首', 'img': 'https://img.dushu.com/2011/08/01/04134329640068.jpg_200.jpg', 'isbn': '9787546341972', 'publish_date': '2010-12-01', 'pages': '306'}
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12192411/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: {'name': '人间词话', 'img': 'https://img.dushu.com/2011/08/01/04134431213898.jpg_200.jpg', 'isbn': '9787546343358', 'publish_date': '2010-12-01', 'pages': '305'}
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12192413/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12192414/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12194362/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12194363/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: {'name': '李白诗集', 'img': 'https://img.dushu.com/2011/08/01/04134475031670.jpg_200.jpg', 'isbn': '9787546341835', 'publish_date': '2010-12-01', 'pages': '303'}
+2019-06-13 14:46:29 [book] INFO: {'name': '无锡名人诗文选', 'img': 'https://img.dushu.com/2011/08/01/04134121848.jpg_200.jpg', 'isbn': '9787203070849', 'publish_date': '2010-12-01', 'pages': '150'}
+2019-06-13 14:46:29 [book] INFO: {'name': '王荆文公诗笺注（全三册 精）', 'img': 'https://img.dushu.com/2011/08/01/04134264011168.jpg_200.jpg', 'isbn': '9787532556779', 'publish_date': '2010-12-01', 'pages': '全3册'}
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12194364/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: {'name': '江南女性别集（上下册）', 'img': 'https://img.dushu.com/2011/08/01/04134640618038.jpg_200.jpg', 'isbn': '9787546115924', 'publish_date': '2010-11-01', 'pages': '全二册'}
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12194365/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: https://www.dushu.com/book/12194366/-> 路过下载中间件 <-
+2019-06-13 14:46:29 [book] INFO: {'name': '楚辞', 'img': 'https://img.dushu.com/2011/08/01/041343056100.jpg_200.jpg', 'isbn': '9787546343259', 'publish_date': '2010-12-01', 'pages': '310'}
+2019-06-13 14:46:30 [book] INFO: {'name': '历史诗词（全八册）', 'img': 'https://img.dushu.com/2011/08/01/04134835988374.jpg_200.jpg', 'isbn': '9787807359203', 'publish_date': '2010-11-01', 'pages': '全八册'}
+2019-06-13 14:46:30 [book] INFO: https://www.dushu.com/book/12194367/-> 路过下载中间件 <-
+2019-06-13 14:46:30 [book] INFO: {'name': '珍藏经典：诗经', 'img': 'https://img.dushu.com/2011/08/01/04134367149119.jpg_200.jpg', 'isbn': '9787538550801', 'publish_date': '2010-12-01', 'pages': '392'}
+2019-06-13 14:46:30 [book] INFO: https://www.dushu.com/book/12194368/-> 路过下载中间件 <-
+2019-06-13 14:46:30 [book] INFO: {'name': '复堂词', 'img': 'https://img.dushu.com/2011/08/01/04135232837767.jpg_200.jpg', 'isbn': '9787561781548', 'publish_date': '2010-10-01', 'pages': '106'}
+2019-06-13 14:46:30 [book] INFO: https://www.dushu.com/book/12194369/-> 路过下载中间件 <-
+2019-06-13 14:46:30 [book] INFO: https://www.dushu.com/book/12194370/-> 路过下载中间件 <-
+2019-06-13 14:46:30 [book] INFO: https://www.dushu.com/book/12194371/-> 路过下载中间件 <-
+2019-06-13 14:46:30 [book] INFO: {'name': '李太白集（线装版全四册）', 'img': 'https://img.dushu.com/2011/04/06/01120751529898.jpg_200.jpg', 'isbn': '9787547003909', 'publish_date': '2011-02-01', 'pages': '全4册'}
+2019-06-13 14:46:30 [book] INFO: {'name': '唐诗三百首', 'img': 'https://img.dushu.com/2011/04/06/01120935912884.jpg_200.jpg', 'isbn': '9787807614616', 'publish_date': '2011-01-01', 'pages': '279'}
+2019-06-13 14:46:30 [book] INFO: {'name': '宋词一百首', 'img': 'https://img.dushu.com/2011/04/06/01120925018448.jpg_200.jpg', 'isbn': '9787807614791', 'publish_date': '2011-01-01', 'pages': '231'}
+2019-06-13 14:46:30 [book] INFO: {'name': '宋词三百首', 'img': 'https://img.dushu.com/2011/04/06/01121096823359.jpg_200.jpg', 'isbn': '9787807614623', 'publish_date': '2011-01-01', 'pages': '219'}
+2019-06-13 14:46:30 [book] INFO: https://www.dushu.com/book/12197385/-> 路过下载中间件 <-
+2019-06-13 14:46:30 [book] INFO: https://www.dushu.com/book/12197386/-> 路过下载中间件 <-
+2019-06-13 14:46:30 [book] INFO: {'name': '中国人必读的节日诗', 'img': 'https://img.dushu.com/2011/04/12/01024115612364.jpg_200.jpg', 'isbn': '9787216065856', 'publish_date': '2011-03-01', 'pages': '296'}
+2019-06-13 14:46:30 [book] INFO: https://www.dushu.com/book/12197387/-> 路过下载中间件 <-
+2019-06-13 14:46:30 [book] INFO: {'name': '美人香里说宋词', 'img': 'https://img.dushu.com/2011/04/12/0102427844750.jpg_200.jpg', 'isbn': '9787550201378', 'publish_date': '2011-03-01', 'pages': '222'}
+2019-06-13 14:46:30 [book] INFO: https://www.dushu.com/book/12198986/-> 路过下载中间件 <-
+2019-06-13 14:46:30 [book] INFO: {'name': '施蛰存全集·唐诗百话', 'img': 'https://img.dushu.com/2011/04/12/0102462188428.jpg_200.jpg', 'isbn': '9787561770207', 'publish_date': '2011-02-01', 'pages': '797'}
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/12198987/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/12198988/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: {'name': '李长吉集（全两册）', 'img': 'https://img.dushu.com/2011/04/12/0102494666549.jpg_200.jpg', 'isbn': '9787211061655', 'publish_date': '2011-01-01', 'pages': '全2册'}
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/12198989/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: {'name': '常识·唐诗入门', 'img': 'https://img.dushu.com/2011/04/18/0847087345566.jpg_200.jpg', 'isbn': '9787811282528', 'publish_date': '2011-04-01', 'pages': '264'}
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/12198990/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: {'name': '中国人必读的节日词曲', 'img': 'https://img.dushu.com/2011/04/12/01023831290124.jpg_200.jpg', 'isbn': '9787216067041', 'publish_date': '2011-03-01', 'pages': '275'}
+2019-06-13 14:46:31 [book] INFO: {'name': '红楼梦诗词', 'img': 'https://img.dushu.com/2011/04/18/08470971846672.jpg_200.jpg', 'isbn': '9787101078268', 'publish_date': '2011-03-01', 'pages': '272'}
+2019-06-13 14:46:31 [book] INFO: {'name': '六世达赖情歌', 'img': 'https://img.dushu.com/2011/04/12/01024157866016.jpg_200.jpg', 'isbn': '9787801709530', 'publish_date': '2011-03-01', 'pages': '201'}
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/11109194/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: {'name': '李商隐', 'img': 'https://img.dushu.com/2011/04/18/08470993757800.jpg_200.jpg', 'isbn': '9787101078237', 'publish_date': '2011-03-01', 'pages': '193'}
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/11109195/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/11109196/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: {'name': '唐诗三百首', 'img': 'https://img.dushu.com/2011/04/18/08471021825406.jpg_200.jpg', 'isbn': '9787547013762', 'publish_date': '2011-03-01', 'pages': '342'}
+2019-06-13 14:46:31 [book] INFO: {'name': '宋词三百首', 'img': 'https://img.dushu.com/2011/04/18/08471190692256.jpg_200.jpg', 'isbn': '9787547013786', 'publish_date': '2011-03-01', 'pages': '295'}
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/11109197/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/11109198/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/11109199/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: https://www.dushu.com/book/11109200/-> 路过下载中间件 <-
+2019-06-13 14:46:31 [book] INFO: {'name': '元曲三百首', 'img': 'https://img.dushu.com/2011/04/18/0847154217515.jpg_200.jpg', 'isbn': '9787547013717', 'publish_date': '2011-03-01', 'pages': '299'}
+2019-06-13 14:46:31 [book] INFO: {'name': '图解诗经', 'img': 'https://img.dushu.com/2011/04/18/0847162036098.jpg_200.jpg', 'isbn': '9787547013823', 'publish_date': '2011-03-01', 'pages': '354'}
+2019-06-13 14:46:32 [book] INFO: {'name': '诗经', 'img': 'https://img.dushu.com/2011/04/18/08471829610238.jpg_200.jpg', 'isbn': '9787548403883', 'publish_date': '2011-02-01', 'pages': '319'}
+2019-06-13 14:46:32 [book] INFO: {'name': '唐诗三百首', 'img': 'https://img.dushu.com/2011/04/18/0847204685808.jpg_200.jpg', 'isbn': '9787548403784', 'publish_date': '2011-02-01', 'pages': '319'}
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109201/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: {'name': '春花秋月何时了：唐宋词里的风花雪月', 'img': 'https://img.dushu.com/2011/04/28/00005354658530.jpg_200.jpg', 'isbn': '9787121129391', 'publish_date': '2011-05-01', 'pages': '202'}
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109202/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109203/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109204/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: {'name': '常识：词学入门', 'img': 'https://img.dushu.com/2011/04/28/00005412562347.jpg_200.jpg', 'isbn': '9787811282504', 'publish_date': '2011-04-01', 'pages': '232'}
+2019-06-13 14:46:32 [book] INFO: {'name': '李白唐诗西域', 'img': 'https://img.dushu.com/2011/04/28/00005798458418.jpg_200.jpg', 'isbn': '9787532557981', 'publish_date': '2011-03-01', 'pages': '263'}
+2019-06-13 14:46:32 [book] INFO: {'name': '图解楚辞', 'img': 'https://img.dushu.com/2011/04/18/08471346837179.jpg_200.jpg', 'isbn': '9787547013915', 'publish_date': '2011-03-01', 'pages': '200'}
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109205/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109206/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109207/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: {'name': '宋词三百首', 'img': 'https://img.dushu.com/2011/05/06/01085640693057.jpg_200.jpg', 'isbn': '9787560168975', 'publish_date': '2011-05-01', 'pages': '340'}
+2019-06-13 14:46:32 [book] INFO: {'name': '才下眉头却上心头：揭秘李清照跌宕人生的飘零宿命', 'img': 'https://img.dushu.com/2011/05/06/0108577838.jpg_200.jpg', 'isbn': '9787511313027', 'publish_date': '2011-04-01', 'pages': '250'}
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109208/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: {'name': '愿得一人白首不相离', 'img': 'https://img.dushu.com/2011/05/06/01085815617487.jpg_200.jpg', 'isbn': '9787511312969', 'publish_date': '2011-04-01', 'pages': '328'}
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109209/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: {'name': '练水风雅：嘉定四先生诗文选注', 'img': 'https://img.dushu.com/2011/05/06/01085951567330.jpg_200.jpg', 'isbn': '9787807406334', 'publish_date': '2011-03-01', 'pages': '286'}
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109210/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: {'name': '云中谁寄锦书来', 'img': 'https://img.dushu.com/2011/05/06/01085985986518.jpg_200.jpg', 'isbn': '9787020084333', 'publish_date': '2011-03-01', 'pages': '228'}
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109211/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: https://www.dushu.com/book/11109212/-> 路过下载中间件 <-
+2019-06-13 14:46:32 [book] INFO: {'name': '识字岗前：小歌剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1959-01-01', 'pages': '50页'}
+2019-06-13 14:46:33 [book] INFO: {'name': '锄杂草：小潮剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '20页'}
+2019-06-13 14:46:33 [book] INFO: {'name': '新小放牛：小型戏曲', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '6页'}
+2019-06-13 14:46:33 [book] INFO: https://www.dushu.com/book/11109213/-> 路过下载中间件 <-
+2019-06-13 14:46:33 [book] INFO: https://www.dushu.com/book/11109214/-> 路过下载中间件 <-
+2019-06-13 14:46:33 [book] INFO: {'name': '柜中缘：蒲州梆子', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1957-01-01', 'pages': '38页'}
+2019-06-13 14:46:33 [book] INFO: {'name': '三请樊梨花：二人转', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '36页'}
+2019-06-13 14:46:33 [book] INFO: https://www.dushu.com/book/12224510/-> 路过下载中间件 <-
+2019-06-13 14:46:33 [book] INFO: {'name': '胡迪骂阎：秦腔', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1959-01-01', 'pages': '14页'}
+2019-06-13 14:46:33 [book] INFO: https://www.dushu.com/book/12224511/-> 路过下载中间件 <-
+2019-06-13 14:46:33 [book] INFO: https://www.dushu.com/book/12224512/-> 路过下载中间件 <-
+2019-06-13 14:46:33 [book] INFO: {'name': '文化关：郿鄠现代剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '16页'}
+2019-06-13 14:46:33 [book] INFO: https://www.dushu.com/book/11109220/-> 路过下载中间件 <-
+2019-06-13 14:46:33 [book] INFO: {'name': '家乡赞', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1959-01-01', 'pages': '17页'}
+2019-06-13 14:46:33 [book] INFO: https://www.dushu.com/book/11109221/-> 路过下载中间件 <-
+2019-06-13 14:46:33 [book] INFO: {'name': '火车头', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1960-01-01', 'pages': '36页'}
+2019-06-13 14:46:33 [book] INFO: {'name': '娘俩赶集：郿鄠', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '10页'}
+2019-06-13 14:46:33 [book] INFO: https://www.dushu.com/book/11109222/-> 路过下载中间件 <-
+2019-06-13 14:46:34 [book] INFO: https://www.dushu.com/book/11109223/-> 路过下载中间件 <-
+2019-06-13 14:46:34 [book] INFO: {'name': '三更风雪', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1962-01-01', 'pages': '29页'}
+2019-06-13 14:46:34 [book] INFO: {'name': '张铁口改行：花鼓', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1952-01-01', 'pages': '5页'}
+2019-06-13 14:46:34 [book] INFO: https://www.dushu.com/book/11109241/-> 路过下载中间件 <-
+2019-06-13 14:46:34 [book] INFO: {'name': '六亿人民齐怒吼', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '20页'}
+2019-06-13 14:46:34 [book] INFO: https://www.dushu.com/book/11109276/-> 路过下载中间件 <-
+2019-06-13 14:46:34 [book] INFO: {'name': '说唱龙王庙：说唱', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '56页'}
+2019-06-13 14:46:34 [book] INFO: https://www.dushu.com/book/11109293/-> 路过下载中间件 <-
+2019-06-13 14:46:34 [book] INFO: https://www.dushu.com/book/11109297/-> 路过下载中间件 <-
+2019-06-13 14:46:34 [book] INFO: {'name': '颂公报：演唱集', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1960-01-01', 'pages': '16页'}
+2019-06-13 14:46:34 [book] INFO: https://www.dushu.com/book/11109313/-> 路过下载中间件 <-
+2019-06-13 14:46:34 [book] INFO: {'name': '孙才尧敢想敢做：小热昏、说唱', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '13页'}
+2019-06-13 14:46:34 [book] INFO: {'name': '人造的月亮呼啦啦飞：曲艺', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1957-01-01', 'pages': '34页'}
+2019-06-13 14:46:34 [book] INFO: https://www.dushu.com/book/11109339/-> 路过下载中间件 <-
+2019-06-13 14:46:34 [book] INFO: https://www.dushu.com/book/11109367/-> 路过下载中间件 <-
+2019-06-13 14:46:34 [book] INFO: {'name': '全民炼钢', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '21页'}
+2019-06-13 14:46:35 [book] INFO: https://www.dushu.com/book/11109380/-> 路过下载中间件 <-
+2019-06-13 14:46:35 [book] INFO: {'name': '婚期：独幕话剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1964-01-01', 'pages': '25页'}
+2019-06-13 14:46:35 [book] INFO: {'name': '举手礼：花鼓戏', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '9页'}
+2019-06-13 14:46:35 [book] INFO: https://www.dushu.com/book/11109381/-> 路过下载中间件 <-
+2019-06-13 14:46:35 [book] INFO: {'name': '金元词通论', 'img': 'https://img.dushu.com/2011/08/01/04140076515286.jpg_200.jpg', 'isbn': '9787532556717', 'publish_date': '2010-08-01', 'pages': '525'}
+2019-06-13 14:46:35 [book] INFO: https://www.dushu.com/book/12224513/-> 路过下载中间件 <-
+2019-06-13 14:46:35 [book] INFO: https://www.dushu.com/book/12224514/-> 路过下载中间件 <-
+2019-06-13 14:46:35 [book] INFO: {'name': '唐诗宋词元曲：《唐诗三百首》《宋词三百首》《元曲三百首》', 'img': 'https://img.dushu.com/2011/08/01/04140112560218.jpg_200.jpg', 'isbn': '9787541547768', 'publish_date': '2010-08-01', 'pages': '全三册'}
+2019-06-13 14:46:35 [book] INFO: https://www.dushu.com/book/12224515/-> 路过下载中间件 <-
+2019-06-13 14:46:35 [book] INFO: {'name': '插图本唐诗三百首（限量珍藏版 排印、影印本）', 'img': 'https://img.dushu.com/2011/08/01/04140178189117.jpg_200.jpg', 'isbn': '9787546114941', 'publish_date': '2010-08-01', 'pages': '全五册'}
+2019-06-13 14:46:35 [book] INFO: {'name': '界树下：琼剧集', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '58页'}
+2019-06-13 14:46:35 [book] INFO: https://www.dushu.com/book/12224516/-> 路过下载中间件 <-
+2019-06-13 14:46:35 [book] INFO: {'name': '慰问袋：小演唱', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1951-01-01', 'pages': '12页'}
+2019-06-13 14:46:35 [book] INFO: https://www.dushu.com/book/12224517/-> 路过下载中间件 <-
+2019-06-13 14:46:36 [book] INFO: {'name': '桂剧丛刊（第一集 合银牌）', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '98页'}
+2019-06-13 14:46:36 [book] INFO: https://www.dushu.com/book/12224518/-> 路过下载中间件 <-
+2019-06-13 14:46:36 [book] INFO: {'name': '抑强记：京剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1959-01-01', 'pages': '131页'}
+2019-06-13 14:46:36 [book] INFO: https://www.dushu.com/book/12224519/-> 路过下载中间件 <-
+2019-06-13 14:46:36 [book] INFO: {'name': '人人歌颂总路线', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '26页'}
+2019-06-13 14:46:36 [book] INFO: https://www.dushu.com/book/12224520/-> 路过下载中间件 <-
+2019-06-13 14:46:36 [book] INFO: https://www.dushu.com/book/12224522/-> 路过下载中间件 <-
+2019-06-13 14:46:36 [book] INFO: {'name': '森林之夜：花鼓戏', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '18页'}
+2019-06-13 14:46:36 [book] INFO: {'name': '姑嫂逛花灯：小演唱', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1951-01-01', 'pages': '17页'}
+2019-06-13 14:46:36 [book] INFO: https://www.dushu.com/book/12224523/-> 路过下载中间件 <-
+2019-06-13 14:46:36 [book] INFO: https://www.dushu.com/book/12224524/-> 路过下载中间件 <-
+2019-06-13 14:46:36 [book] INFO: {'name': '弄巧反拙：琼剧集', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '44页'}
+2019-06-13 14:46:36 [book] INFO: {'name': '换旗：小潮剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '26页'}
+2019-06-13 14:46:36 [book] INFO: https://www.dushu.com/book/12224525/-> 路过下载中间件 <-
+2019-06-13 14:46:36 [book] INFO: https://www.dushu.com/book/12224526/-> 路过下载中间件 <-
+2019-06-13 14:46:37 [book] INFO: {'name': '宇宙火箭游月宫：现代秦腔神话剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1959-01-01', 'pages': '21页'}
+2019-06-13 14:46:37 [book] INFO: {'name': '通过彝区大凉山', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1959-01-01', 'pages': '15页'}
+2019-06-13 14:46:37 [book] INFO: https://www.dushu.com/book/12224527/-> 路过下载中间件 <-
+2019-06-13 14:46:37 [book] INFO: {'name': '咱们直正路：小歌剧', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1953-01-01', 'pages': '24页'}
+2019-06-13 14:46:37 [book] INFO: https://www.dushu.com/book/12224528/-> 路过下载中间件 <-
+2019-06-13 14:46:37 [book] INFO: https://www.dushu.com/book/12224529/-> 路过下载中间件 <-
+2019-06-13 14:46:37 [book] INFO: {'name': '入社要入心：说唱', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1955-01-01', 'pages': '26页'}
+2019-06-13 14:46:37 [book] INFO: {'name': '松雪斋集', 'img': 'https://img.dushu.com/2011/08/01/04140239021173.jpg_200.jpg', 'isbn': '9787807358121', 'publish_date': '2010-08-01', 'pages': '360'}
+2019-06-13 14:46:37 [book] INFO: https://www.dushu.com/book/12224530/-> 路过下载中间件 <-
+2019-06-13 14:46:37 [book] INFO: {'name': '两妯娌', 'img': 'https://a.dushu.com/img/n200.png', 'isbn': None, 'publish_date': '1958-01-01', 'pages': '20页'}
+2019-06-13 14:46:37 [book] INFO: https://www.dushu.com/book/12224531/-> 路过下载中间件 <-
+2019-06-13 14:46:37 [book] INFO: {'name': '三苏集（线装版全四册）', 'img': 'https://img.dushu.com/2011/08/01/04140851535668.jpg_200.jpg', 'isbn': '9787547010334', 'publish_date': '2010-07-01', 'pages': '645'}
+2019-06-13 14:46:37 [book] INFO: https://www.dushu.com/book/12224532/-> 路过下载中间件 <-
+2019-06-13 14:46:37 [book] INFO: {'name': '五华诗苑', 'img': 'https://img.dushu.com/2011/08/01/04141032872201.jpg_200.jpg', 'isbn': '9787532554850', 'publish_date': '2010-07-01', 'pages': '199'}
+2019-06-13 14:46:38 [book] INFO: https://www.dushu.com/book/12224533/-> 路过下载中间件 <-
+2019-06-13 14:46:38 [book] INFO: {'name': '愚菴小集', 'img': 'https://img.dushu.com/2011/08/01/04141093756499.jpg_200.jpg', 'isbn': '9787561778951', 'publish_date': '2010-06-01', 'pages': '354'}
+2019-06-13 14:46:38 [book] INFO: https://www.dushu.com/book/12224534/-> 路过下载中间件 <-
+2019-06-13 14:46:38 [book] INFO: https://www.dushu.com/book/12224535/-> 路过下载中间件 <-
+2019-06-13 14:46:38 [book] INFO: {'name': '人间何处问多情：《纳兰词》情解', 'img': 'https://img.dushu.com/2011/08/01/04141132829670.jpg_200.jpg', 'isbn': '9787221089274', 'publish_date': '2010-06-01', 'pages': '257'}
+2019-06-13 14:46:38 [book] INFO: https://www.dushu.com/book/12224536/-> 路过下载中间件 <-
+2019-06-13 14:46:38 [book] INFO: {'name': '名家古典诗词', 'img': 'https://img.dushu.com/2011/08/01/04142271834994.jpg_200.jpg', 'isbn': '9787537946377', 'publish_date': '2010-04-01', 'pages': '204'}
+2019-06-13 14:46:38 [book] INFO: https://www.dushu.com/book/12224537/-> 路过下载中间件 <-
+2019-06-13 14:46:38 [book] INFO: https://www.dushu.com/book/12224538/-> 路过下载中间件 <-
+2019-06-13 14:46:38 [book] INFO: {'name': '诗歌乐舞唱古诗（下）', 'img': 'https://img.dushu.com/2011/08/01/04140267141022.jpg_200.jpg', 'isbn': '9787512101760', 'publish_date': '2010-08-01', 'pages': '24'}
+2019-06-13 14:46:38 [book] INFO: {'name': '元曲三百首全书', 'img': 'https://img.dushu.com/2011/08/01/04143476569218.jpg_200.jpg', 'isbn': '9787510701047', 'publish_date': '2010-02-01', 'pages': '294'}
+2019-06-13 14:46:38 [book] INFO: {'name': '欧阳修词集', 'img': 'https://img.dushu.com/2011/08/01/04140342159123.jpg_200.jpg', 'isbn': '9787532556533', 'publish_date': '2010-07-01', 'pages': '143'}
+2019-06-13 14:46:38 [book] INFO: https://www.dushu.com/book/1166_25.html-> 路过下载中间件 <-
+2019-06-13 14:46:38 [book] INFO: https://www.dushu.com/book/1166_24.html-> 路过下载中间件 <-
+2019-06-13 14:46:38 [book] INFO: {'name': '广西古代诗词史', 'img': 'https://img.dushu.com/2011/08/01/04144871829177.jpg_200.jpg', 'isbn': '9787563393879', 'publish_date': '2009-12-01', 'pages': '447'}
+2019-06-13 14:46:38 [book] INFO: {'name': '古体诗苑', 'img': 'https://img.dushu.com/2011/08/01/04145770382275.jpg_200.jpg', 'isbn': '9787546108216', 'publish_date': '2009-10-01', 'pages': '全两册'}
+2019-06-13 14:46:39 [book] INFO: https://www.dushu.com/book/1166_23.html-> 路过下载中间件 <-
+2019-06-13 14:46:39 [book] INFO: https://www.dushu.com/book/1166_22.html-> 路过下载中间件 <-
+2019-06-13 14:46:39 [book] INFO: {'name': '《红楼梦》诗词精选', 'img': 'https://img.dushu.com/2011/08/01/04150429695023.jpg_200.jpg', 'isbn': '9787535633521', 'publish_date': '2009-09-01', 'pages': '24'}
+2019-06-13 14:46:39 [book] INFO: https://www.dushu.com/book/1166_21.html-> 路过下载中间件 <-
+2019-06-13 14:46:39 [book] INFO: {'name': '诗境徜徉录（上下册）', 'img': 'https://img.dushu.com/2011/08/01/04152185911686.jpg_200.jpg', 'isbn': '9787806874462', 'publish_date': '2009-06-01', 'pages': '全两册'}
+2019-06-13 14:46:39 [book] INFO: https://www.dushu.com/book/1166_20.html-> 路过下载中间件 <-
+2019-06-13 14:46:39 [book] INFO: {'name': '旧韵新咏（上下册）', 'img': 'https://img.dushu.com/2011/08/01/04153562540999.jpg_200.jpg', 'isbn': '9787121082979', 'publish_date': '2009-03-01', 'pages': '全二册'}
+2019-06-13 14:46:39 [book] INFO: {'name': '过日难忘，爱情诗', 'img': 'https://img.dushu.com/2011/08/01/0415578908794.jpg_200.jpg', 'isbn': '9787536054417', 'publish_date': '2008-12-01', 'pages': '173'}
+2019-06-13 14:46:39 [book] INFO: https://www.dushu.com/book/12224540/-> 路过下载中间件 <-
+2019-06-13 14:46:39 [book] INFO: {'name': '宋词三百首全书', 'img': 'https://img.dushu.com/2011/08/01/04143784366707.jpg_200.jpg', 'isbn': '9787510701023', 'publish_date': '2010-02-01', 'pages': '305'}
+2019-06-13 14:46:39 [book] INFO: https://www.dushu.com/book/12224541/-> 路过下载中间件 <-
+2019-06-13 14:46:39 [book] INFO: https://www.dushu.com/book/12224542/-> 路过下载中间件 <-
+2019-06-13 14:46:39 [book] INFO: {'name': '风雅西湖', 'img': 'https://img.dushu.com/2011/08/01/0417443186509.jpg_200.jpg', 'isbn': '9787805178141', 'publish_date': '2004-10-01', 'pages': '全四册'}
+2019-06-13 14:46:39 [book] INFO: {'name': '枕秋阁诗文集', 'img': 'https://img.dushu.com/2011/11/23/13532794898929.jpg_200.jpg', 'isbn': '9787546116754', 'publish_date': '2010-03-01', 'pages': '全2册'}
+2019-06-13 14:46:39 [book] INFO: https://www.dushu.com/book/12224543/-> 路过下载中间件 <-
+2019-06-13 14:46:39 [book] INFO: https://www.dushu.com/book/12224544/-> 路过下载中间件 <-
+2019-06-13 14:46:40 [book] INFO: {'name': '清道人遗集', 'img': 'https://img.dushu.com/2011/11/23/13533120861823.jpg_200.jpg', 'isbn': '9787546116778', 'publish_date': '2011-03-01', 'pages': '307'}
+2019-06-13 14:46:40 [book] INFO: https://www.dushu.com/book/12224545/-> 路过下载中间件 <-
+2019-06-13 14:46:40 [book] INFO: {'name': '《楚辞》文献研读', 'img': 'https://img.dushu.com/2011/08/01/04175457884530.jpg_200.jpg', 'isbn': '9787549505043', 'publish_date': '2011-06-01', 'pages': '251'}
+2019-06-13 14:46:40 [book] INFO: https://www.dushu.com/book/12224546/-> 路过下载中间件 <-
+2019-06-13 14:46:40 [book] INFO: {'name': '传统文化普及读本·诗经', 'img': 'https://img.dushu.com/2011/11/23/13533028846452.jpg_200.jpg', 'isbn': '9787544517461', 'publish_date': '2011-06-01', 'pages': '348'}
+2019-06-13 14:46:40 [book] INFO: {'name': '传统文化普及读本·唐诗三百首', 'img': 'https://img.dushu.com/2011/11/23/13533070992800.jpg_200.jpg', 'isbn': '9787544517577', 'publish_date': '2011-06-01', 'pages': '320'}
+2019-06-13 14:46:40 [book] INFO: https://www.dushu.com/book/12224548/-> 路过下载中间件 <-
+2019-06-13 14:46:40 [book] INFO: https://www.dushu.com/book/12224549/-> 路过下载中间件 <-
+2019-06-13 14:46:40 [book] INFO: {'name': '传统文化普及读本·元曲三百首', 'img': 'https://img.dushu.com/2011/11/23/13533161420049.jpg_200.jpg', 'isbn': '9787544517591', 'publish_date': '2011-06-01', 'pages': '310'}
+2019-06-13 14:46:40 [book] INFO: https://www.dushu.com/book/12074146/-> 路过下载中间件 <-
+2019-06-13 14:46:41 [book] INFO: https://www.dushu.com/book/12093347/-> 路过下载中间件 <-
+2019-06-13 14:46:41 [book] INFO: https://www.dushu.com/book/12078064/-> 路过下载中间件 <-
+2019-06-13 14:46:41 [book] INFO: https://www.dushu.com/book/12149900/-> 路过下载中间件 <-
+2019-06-13 14:46:41 [book] INFO: {'name': '传统文化普及读本·宋词三百首', 'img': 'https://img.dushu.com/2011/11/23/13533117742305.jpg_200.jpg', 'isbn': '9787544517584', 'publish_date': '2011-06-01', 'pages': '333'}
+2019-06-13 14:46:41 [book] INFO: https://www.dushu.com/book/12120154/-> 路过下载中间件 <-
+2019-06-13 14:46:41 [book] INFO: https://www.dushu.com/book/12115432/-> 路过下载中间件 <-
+2019-06-13 14:46:41 [book] INFO: https://www.dushu.com/book/12115433/-> 路过下载中间件 <-
+2019-06-13 14:46:41 [book] INFO: {'name': '唐诗三百首（上中下）', 'img': 'https://img.dushu.com/2012/07/31/07051627775324.jpg_200.jpg', 'isbn': '9787541547751', 'publish_date': '2010-08-01', 'pages': '335'}
+2019-06-13 14:46:41 [book] INFO: https://www.dushu.com/book/12113301/-> 路过下载中间件 <-
+2019-06-13 14:46:41 [book] INFO: https://www.dushu.com/book/12113302/-> 路过下载中间件 <-
+2019-06-13 14:46:41 [book] INFO: {'name': '风雅海曙', 'img': 'https://img.dushu.com/2011/08/01/04173635991210.jpg_200.jpg', 'isbn': '9787805177489', 'publish_date': '2005-07-01', 'pages': '全2册'}
+2019-06-13 14:46:41 [book] INFO: https://www.dushu.com/book/12157042/-> 路过下载中间件 <-
+2019-06-13 14:46:42 [book] INFO: {'name': '古典诗词艺术欣赏', 'img': 'https://img.dushu.com/2012/07/31/05104810070368.jpg_200.jpg', 'isbn': '9787802412941', 'publish_date': '2010-08-01', 'pages': '236'}
+2019-06-13 14:46:42 [book] INFO: https://www.dushu.com/book/12111016/-> 路过下载中间件 <-
+2019-06-13 14:46:42 [book] INFO: https://www.dushu.com/book/12111017/-> 路过下载中间件 <-
+2019-06-13 14:46:42 [book] INFO: {'name': '彩图注音：唐诗三百首', 'img': 'https://img.dushu.com/2011/08/01/04184429638111.jpg_200.jpg', 'isbn': '9787535023117', 'publish_date': '2003-01-01', 'pages': '301'}
+2019-06-13 14:46:42 [book] INFO: {'name': '诗经今注', 'img': 'https://img.dushu.com/2011/08/01/0419024633178.jpg_200.jpg', 'isbn': '9787302227366', 'publish_date': '2010-08-01', 'pages': '343'}
+2019-06-13 14:46:42 [book] INFO: {'name': '元曲鉴赏', 'img': 'https://img.dushu.com/2011/11/23/1353332369677.jpg_200.jpg', 'isbn': '9787535440945', 'publish_date': '2011-07-15', 'pages': '386'}
+2019-06-13 14:46:42 [book] INFO: https://www.dushu.com/book/12097170/-> 路过下载中间件 <-
+2019-06-13 14:46:42 [book] INFO: {'name': '秦观词集', 'img': 'https://img.dushu.com/2011/08/01/0418555469632.jpg_200.jpg', 'isbn': '9787532556458', 'publish_date': '2010-07-01', 'pages': '181'}
+2019-06-13 14:46:42 [book] INFO: https://www.dushu.com/book/12097171/-> 路过下载中间件 <-
+2019-06-13 14:46:43 [book] INFO: {'name': '元曲妙语辞典', 'img': 'https://img.dushu.com/2011/11/23/13533412653288.jpg_200.jpg', 'isbn': '9787540319540', 'publish_date': '2011-05-01', 'pages': '516'}
+2019-06-13 14:46:43 [book] INFO: https://www.dushu.com/book/12097173/-> 路过下载中间件 <-
+2019-06-13 14:46:43 [book] INFO: https://www.dushu.com/book/12097175/-> 路过下载中间件 <-
+2019-06-13 14:46:43 [book] INFO: https://www.dushu.com/book/12097176/-> 路过下载中间件 <-
+2019-06-13 14:46:43 [book] INFO: {'name': '中国历代名家诗词选（珍藏版）', 'img': 'https://img.dushu.com/2010/04/27/0324022818642.jpg_200.jpg', 'isbn': '9787801718457', 'publish_date': '2009-01-01', 'pages': '180'}
+2019-06-13 14:46:43 [book] INFO: {'name': '中国八大诗人', 'img': 'https://img.dushu.com/2010/10/22/16523448469345.jpg_200.jpg', 'isbn': '9787101074994', 'publish_date': '2010-08-01', 'pages': '186'}
+2019-06-13 14:46:43 [book] INFO: {'name': '唐诗精华注译评', 'img': 'https://img.dushu.com/2010/04/11/00551914085780.jpg_200.jpg', 'isbn': '9787544510905', 'publish_date': '2010-02-01', 'pages': '891'}
+2019-06-13 14:46:43 [book] INFO: https://www.dushu.com/book/12097177/-> 路过下载中间件 <-
+2019-06-13 14:46:43 [book] INFO: https://www.dushu.com/book/12097178/-> 路过下载中间件 <-
+2019-06-13 14:46:43 [book] INFO: {'name': '品唐诗', 'img': 'https://img.dushu.com/2010/08/18/17235764031295.jpg_200.jpg', 'isbn': '9787543943001', 'publish_date': '2010-05-01', 'pages': '229'}
+2019-06-13 14:46:43 [book] INFO: {'name': '闲庐诗稿', 'img': 'https://img.dushu.com/2010/06/29/1138523137488.jpg_200.jpg', 'isbn': '9787561345214', 'publish_date': '2009-01-01', 'pages': '122'}
+2019-06-13 14:46:43 [book] INFO: https://www.dushu.com/book/12097179/-> 路过下载中间件 <-
+2019-06-13 14:46:43 [book] INFO: https://www.dushu.com/book/12097180/-> 路过下载中间件 <-
+2019-06-13 14:46:43 [book] INFO: {'name': '千家诗诠注详析（插图本）', 'img': 'https://img.dushu.com/2010/07/30/21001284391544.jpg_200.jpg', 'isbn': '9787222061088', 'publish_date': '2010-06-01', 'pages': '249'}
+2019-06-13 14:46:43 [book] INFO: {'name': '阶梯数学书高阶3—4岁', 'img': 'https://img.dushu.com/2016/04/18/0613257087438.jpg_200.jpg', 'isbn': '9787564044954', 'publish_date': '2011-07-11', 'pages': None}
+2019-06-13 14:46:43 [book] INFO: https://www.dushu.com/book/12097181/-> 路过下载中间件 <-
+2019-06-13 14:46:44 [book] INFO: {'name': '宋词三百首', 'img': 'https://img.dushu.com/2010/07/30/21001870380536.jpg_200.jpg', 'isbn': '9787538543483', 'publish_date': '2010-04-01', 'pages': '312'}
+2019-06-13 14:46:44 [book] INFO: https://www.dushu.com/book/12097182/-> 路过下载中间件 <-
+2019-06-13 14:46:44 [book] INFO: https://www.dushu.com/book/12097183/-> 路过下载中间件 <-
+2019-06-13 14:46:44 [book] INFO: https://www.dushu.com/book/12100047/-> 路过下载中间件 <-
+2019-06-13 14:46:44 [book] INFO: {'name': '姜夔词集', 'img': 'https://img.dushu.com/2011/02/03/15031918768680.jpg_200.jpg', 'isbn': '9787532556540', 'publish_date': '2010-07-01', 'pages': '172'}
+2019-06-13 14:46:44 [book] INFO: {'name': '唐诗与酒', 'img': 'https://img.dushu.com/2010/07/08/13451198473385.jpg_200.jpg', 'isbn': '9787530655597', 'publish_date': '2010-06-01', 'pages': '252'}
+2019-06-13 14:46:44 [book] INFO: {'name': '李长吉集', 'img': 'https://img.dushu.com/2012/07/31/070341864273.jpg_200.jpg', 'isbn': '9787211062195', 'publish_date': '2011-01-01', 'pages': '全2册'}
+2019-06-13 14:46:44 [book] INFO: https://www.dushu.com/book/12100048/-> 路过下载中间件 <-
+2019-06-13 14:46:44 [book] INFO: {'name': '何陋居集·甦庵集', 'img': 'https://img.dushu.com/2010/07/08/13451926543271.jpg_200.jpg', 'isbn': '9787811292619', 'publish_date': '2010-04-01', 'pages': '517'}
+2019-06-13 14:46:44 [book] INFO: https://www.dushu.com/book/12100049/-> 路过下载中间件 <-
+2019-06-13 14:46:44 [book] INFO: https://www.dushu.com/book/12100050/-> 路过下载中间件 <-
+2019-06-13 14:46:45 [book] INFO: {'name': '浣花纸里水墨词：唐诗宋词的细节之美', 'img': 'https://img.dushu.com/2010/05/27/0227347831763.jpg_200.jpg', 'isbn': '9787530959718', 'publish_date': '2010-05-01', 'pages': '220'}
+2019-06-13 14:46:45 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2019-06-13 14:46:45 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-06-13 14:46:45 [book] INFO: {'name': '宋词与禅', 'img': 'https://img.dushu.com/2010/07/28/1028183152961.jpg_200.jpg', 'isbn': '9787020080052', 'publish_date': '2010-05-01', 'pages': '322'}
+2019-06-13 14:46:45 [book] INFO: {'name': '唐诗宝鉴·鉴古察今卷', 'img': 'https://img.dushu.com/2010/05/27/02273868717591.jpg_200.jpg', 'isbn': '9787224092967', 'publish_date': '2010-03-01', 'pages': '378'}
+2019-06-13 14:46:45 [book] INFO: {'name': '唐诗宝鉴·闲情逸致卷', 'img': 'https://img.dushu.com/2010/06/29/11554068794717.jpg_200.jpg', 'isbn': '9787224092981', 'publish_date': '2010-03-01', 'pages': '372'}
+2019-06-13 14:46:45 [book] INFO: {'name': '妆点三国：倾城多为英雄误', 'img': 'https://img.dushu.com/2010/05/27/02273379651612.jpg_200.jpg', 'isbn': '9787530959916', 'publish_date': '2010-05-01', 'pages': '219'}
+2019-06-13 14:46:45 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown

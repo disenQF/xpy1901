@@ -1,22 +1,26 @@
 # -*- coding: utf-8 -*-
-from dushu.user_agents import get_ua
 
-BOT_NAME = 'dushu'
+# Scrapy settings for gushiwen project
+#
+# For simplicity, this file contains only settings considered important or
+# commonly used. You can find more settings consulting the documentation:
+#
+#     https://doc.scrapy.org/en/latest/topics/settings.html
+#     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
+#     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-SPIDER_MODULES = ['dushu.spiders']
-NEWSPIDER_MODULE = 'dushu.spiders'
+BOT_NAME = 'gushiwen'
+
+SPIDER_MODULES = ['gushiwen.spiders']
+NEWSPIDER_MODULE = 'gushiwen.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = get_ua()
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) ' \
+             'Gecko/20100101 Firefox/67.0'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
-
-# 配置日志的信息
-LOG_LEVEL = 'INFO'
-LOG_FILE = 'book.log'
-
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -30,7 +34,7 @@ LOG_FILE = 'book.log'
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+# COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -44,14 +48,14 @@ LOG_FILE = 'book.log'
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'dushu.middlewares.DushuSpiderMiddleware': 543,
+#    'gushiwen.middlewares.GushiwenSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-   'dushu.middlewares.DushuDownloaderMiddleware': 543,
-}
+#DOWNLOADER_MIDDLEWARES = {
+#    'gushiwen.middlewares.GushiwenDownloaderMiddleware': 543,
+#}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
@@ -61,9 +65,9 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-ITEM_PIPELINES = {
-   'dushu.pipelines.DushuPipeline': 300,
-}
+#ITEM_PIPELINES = {
+#    'gushiwen.pipelines.GushiwenPipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

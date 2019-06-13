@@ -8,7 +8,7 @@
 from scrapy import signals
 
 
-class DushuSpiderMiddleware(object):
+class GushiwenSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -56,7 +56,7 @@ class DushuSpiderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class DushuDownloaderMiddleware(object):
+class GushiwenDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
@@ -71,7 +71,6 @@ class DushuDownloaderMiddleware(object):
     def process_request(self, request, spider):
         # Called for each request that goes through the downloader
         # middleware.
-        spider.logger.info(request.url + '-> 路过下载中间件 <-')
 
         # Must either:
         # - return None: continue processing this request
