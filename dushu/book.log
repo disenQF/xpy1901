@@ -695,3 +695,7 @@
 2019-06-13 14:46:45 [book] INFO: {'name': '唐诗宝鉴·闲情逸致卷', 'img': 'https://img.dushu.com/2010/06/29/11554068794717.jpg_200.jpg', 'isbn': '9787224092981', 'publish_date': '2010-03-01', 'pages': '372'}
 2019-06-13 14:46:45 [book] INFO: {'name': '妆点三国：倾城多为英雄误', 'img': 'https://img.dushu.com/2010/05/27/02273379651612.jpg_200.jpg', 'isbn': '9787530959916', 'publish_date': '2010-05-01', 'pages': '219'}
 2019-06-13 14:46:45 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2019-06-14 10:08:45 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: dushu)
+2019-06-14 10:08:45 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.6.1 (v3.6.1:69c0db5050, Mar 21 2017, 01:21:04) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Darwin-18.6.0-x86_64-i386-64bit
+2019-06-14 10:13:50 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: dushu)
+2019-06-14 10:13:50 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.6.1 (v3.6.1:69c0db5050, Mar 21 2017, 01:21:04) - [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Darwin-18.6.0-x86_64-i386-64bit
